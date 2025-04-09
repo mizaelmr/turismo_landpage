@@ -1,10 +1,10 @@
-import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
-import logo from "../../../public/logo-AQ2YPMYN.svg";
-import traceborder from "../../../public/traced-border@2x-AJ4X7YYM.png";
-import heromockup from "../../../public/hero-mockup-app-organizze-F7HBQCLE.webp";
-import arrowright from "../../../public/arrow-right-R7RZTDAN.svg";
+import logo from "../../public/logo-AQ2YPMYN.svg";
+import traceborder from "../../public/traced-border@2x-AJ4X7YYM.png";
+import heromockup from "../../public/hero-mockup-app-organizze-F7HBQCLE.webp";
+import arrowright from "../../public/arrow-right-R7RZTDAN.svg";
 import Image from "next/image";
-import ButtonComponent from "../_components/button";
+import ButtonComponent from "../components/button";
+
 export function Hero() {
   return (
     <section className="bg-[#edfdf2] text-black relative overflow-hidden">
@@ -87,7 +87,7 @@ export function Hero() {
                 Login
               </a>
               <a
-                className="rounded-lg text-base tracking-tig transition-colors font-serif ease-in-out duration-300 select-none inline-flex min-w-fit items-center ml-8 z-20 text-[#FBF7EA] font-semibold py-3 px-6 bg-[#129E3F] hover:bg-[#006A33]"
+                className="rounded-lg text-base tracking-tig transition-colors font-normal ease-in-out duration-300 select-none inline-flex min-w-fit items-center ml-8 z-20 text-[#FBF7EA] font-semibold py-3 px-6 bg-[#129E3F] hover:bg-[#006A33]"
                 href="https://auth.organizze.com.br/cadastro"
               >
                 Comece já!
@@ -147,13 +147,13 @@ export function Hero() {
                 </div>
                 &nbsp;que a planilha não te oferece
               </h1>
-              <p className="mt-6 mb-8 max-w-[400px] text-base font-serif text-center font-light text-[#454843] lg:text-left lg:mx-0 lg:max-w-[520px]">
+              <p className="mt-6 mb-8 max-w-[400px] text-base font-normal text-center font-light text-[#454843] lg:text-left lg:mx-0 lg:max-w-[520px]">
                 Organize seu dinheiro em tempo real em uma solução completa,
                 prática e segura. Tenha o controle de finanças que você sempre
                 quis!
               </p>
               <a
-                className="rounded-lg text-base tracking-tig transition-colors ease-in-out duration-300 select-none inline-flex justify-center items-center drop-shadow-green-button-drop-shadow font-serif text-white font-semibold py-2 pl-6 pr-2 bg-[#129E3F] hover:bg-[#006A33]"
+                className="rounded-lg text-base tracking-tig transition-colors ease-in-out duration-300 select-none inline-flex justify-center items-center drop-shadow-green-button-drop-shadow font-normal text-white font-semibold py-2 pl-6 pr-2 bg-[#129E3F] hover:bg-[#006A33]"
                 href="https://auth.organizze.com.br/cadastro"
               >
                 Teste gratuitamente{/*<!-- -->*/}
@@ -194,7 +194,7 @@ export function Hero() {
                       </clipPath>
                     </defs>
                   </svg>
-                  <p className="ml-5 font-light font-serif text-[#454843]">
+                  <p className="ml-5 font-light font-normal text-[#454843]">
                     Segurança dos seus dados em primeiro lugar
                   </p>
                 </div>
@@ -224,7 +224,7 @@ export function Hero() {
                       </clipPath>
                     </defs>
                   </svg>
-                  <p className="ml-5 font-light font-serif text-[#454843]">
+                  <p className="ml-5 font-light font-normal text-[#454843]">
                     Acesse quando quiser, no celular ou computador
                   </p>
                 </div>
