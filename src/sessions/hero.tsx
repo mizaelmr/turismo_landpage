@@ -4,13 +4,15 @@ import heromockup from "../../public/hero-mockup-app-organizze-F7HBQCLE.webp";
 import arrowright from "../../public/arrow-right-R7RZTDAN.svg";
 import Image from "next/image";
 import ButtonComponent from "../components/button";
+import Container from "@/components/Container";
 
 export function Hero() {
   return (
     <section className="bg-[#edfdf2] text-black relative overflow-hidden">
       <header className="h-28 flex-none padding-x-all-sections bg-[#EDFDF2]">
         <div className="relative">
-          <div className="flex justify-center items-center max-w-[1224px] mx-auto space-x-24 py-12 lg:py-6 lg:justify-start">
+          <Container>
+            
             <div className="flex absolute bottom-0 lg:relative lg:top-0 lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Organizze</span>
@@ -93,7 +95,8 @@ export function Hero() {
                 Comece já!
               </a>
             </div>
-          </div>
+
+          </Container>
         </div>
       </header>
 

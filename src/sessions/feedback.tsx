@@ -3,9 +3,11 @@ import { CradFeedback } from "@/components/cardFeedback"
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
+import Container from "@/components/Container";
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+
 
 export function Feedback() {
     const feedbacks = [
@@ -50,36 +52,38 @@ export function Feedback() {
 
     return (
         <section className="w-full flex flex-col py-12 md:py-16 relative bg-[#EDFDF2]">
-            <div className="text-center mx-auto w-full max-w-[1224px] padding-x-all-sections">
-                <p className="text-base font-normal leading-4 font-serif text-[#3A424A] text-center mb-3">
-                    O que eles estão falando
-                </p>
-                <h2 className="max-w-[700px] text-black mb-2 md:mb-10 text-3xl md:text-5xl mx-auto text-center text-base-text font-bold">
-                    Veja porquê nossos clientes amam o Organizze
-                </h2>
-            </div>
-            <div>
-                <Swiper
-                    slidesPerView={6}
-                    spaceBetween={10}
-                    loop={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    autoplay={{
-                        delay: 3500,
-                        disableOnInteraction: false,
-                    }}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="px-4"
-                >
-                    {feedbacks.map((feedback, index) => (
-                        <SwiperSlide className="max-w-[300px]">
-                            <CradFeedback key={index} name={feedback.name} title={feedback.title} text={feedback.text} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-            </div>
+            <Container>
+                <div>
+                    <p className="text-base font-normal leading-4 font-serif text-[#3A424A] text-center mb-3">
+                        O que eles estão falando
+                    </p>
+                    <h2 className="max-w-[700px] text-black mb-2 md:mb-10 text-3xl md:text-5xl mx-auto text-center text-base-text font-bold">
+                        Veja porquê nossos clientes amam o Organizze
+                    </h2>
+                </div>
+                <div style={{width: '922px !important'}}  >
+                    <Swiper
+                        slidesPerView={6}
+                        spaceBetween={10}
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        autoplay={{
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        }}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="px-4"
+                    >
+                        {feedbacks.map((feedback, index) => (
+                            <SwiperSlide className="max-w-[300px]">
+                                <CradFeedback key={index} name={feedback.name} title={feedback.title} text={feedback.text} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </Container>
 
         </section>
     );

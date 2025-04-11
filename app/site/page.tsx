@@ -7,6 +7,7 @@ import { Questions } from "@/sessions/questions";
 import { Resources } from "@/sessions/resources";
 import { Understand } from "@/sessions/understand";
 
+
 export default function Home() {
   return (
     <main>

@@ -1,12 +1,13 @@
 import phone01 from "../../public/phone01-ICS7NWXO.webp";
 import Image from "next/image";
 import ParagrafoComponent from "../components/paragrafos";
+import Container from "@/components/Container";
 
 export function Pag2() {
   return (
     <section>
       <section className="m-auto padding-x-all-sections bg-[#FEFDF9]">
-        <div className="max-w-[1224px] mx-auto bg-[#FEFDF9] border-b border-b-[#C5C7C2] flex items-center py-12">
+        <Container>
           <p className="font-light font-normal text-black text-base text-base-text tracking-wide w-[230px] mr-12 hidden lg:block">
             Na mídia, por quem confia no nosso trabalho:
           </p>
@@ -252,7 +253,7 @@ export function Pag2() {
               </svg>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <section className="w-full padding-x-all-sections bg-[#FEFDF9] pt-10 lg:pt-14 pb-4">

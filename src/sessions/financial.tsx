@@ -1,11 +1,13 @@
 import Image from "next/image";
 import traceborder from "../../public/traced-border@2x-AJ4X7YYM.png";
 import financialScreen from "../../public/financialScreen.png";
+import Container from "@/components/Container";
+
 
 export function Financial() {
     return (
         <section className="relative pt-12 md:pt-16 pb-4 overflow-hidden padding-x-all-sections bg-[#FBF7EA]">
-            <div className="max-w-[1224px] h-full flex items-center relative mx-auto md:items-start lg:flex-row lg:justify-between lg:m-auto">
+            <Container>
                 <div className="sm:rounded-2xl h-full w-full lg:w-auto">
                     <div className="relative flex flex-col items-center pt-0 py-8 sm:py-12 lg:py-16 lg:items-start">
                         <p className="text-base mb-3 font-normal font-bold text-base-text leading-[16px] text-center text-[#5C5F5A] sm:text-center md:text-left">Segurança em primeiro lugar</p>
@@ -147,7 +149,7 @@ export function Financial() {
                         alt="Imagem do Organizze sendo exibido na sua versão para computador, uma solução para gestão financeira pessoal e controle de contas"
                     />
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

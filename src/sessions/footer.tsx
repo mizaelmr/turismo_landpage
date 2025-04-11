@@ -4,12 +4,12 @@ import instagram from "../../public/instagram-logo.svg";
 import facebook from "../../public/facebook-logo.svg";
 import linkedin from "../../public/linkedin-logo.svg";
 import xLogo from "../../public/x-logo.svg";
-// import { FacebookLogo, InstagramLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
+import Container from "@/components/Container";
 
 export function Footer() {
     return (
         <footer className="bg-[#FEFDF9] padding-x-all-sections w-full border-t border-[#F1F1F1]">
-            <div className="max-w-[1224px] m-auto py-11 overflow-hidden sm:px-6">
+            <Container>
                 <div className="flex flex-col items-center lg:flex-row lg:justify-between mb-8 lg:mb-0">
 
                     <a href="/">
@@ -105,7 +105,7 @@ export function Footer() {
                         <a className="text-sm leading-6 font-normal text-[#454843] mt-2 lg:mt-0" href="/termos-de-uso">Termos de Serviço</a>
                     </div>
                 </div>
-            </div>
+            </Container>
         </footer>
     )
 }

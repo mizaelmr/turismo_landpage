@@ -1,11 +1,13 @@
 import ParagrafoComponent from "@/components/paragrafos";
 import star from "../../public/star.svg";
+import Container from "@/components/Container";
+
 
 export function Understand() {
     return (
         <>
             <section className="py-12 lg:py-20 lg:pb-28 padding-x-all-sections bg-[#FEFDF9]">
-                <div className="max-w-[1224px] mx-auto lg:max-w-7xl">
+             <Container>
                     <div className="md:mt-6 flex flex-col items-center lg:items-start w-full lg:w-auto">
                         <p className="mb-3 text-base-text text-center m-auto font-normal leading-4 text-[#454843]">
                             Controle total
@@ -46,7 +48,7 @@ export function Understand() {
                             />
                         </div>
                     </div>
-                </div>
+                </Container>
             </section>
         </>
     );

@@ -1,11 +1,13 @@
 import steps from "../../public/steps.svg";
 import phone from "../../public/phone-resources.webp";
 import Image from "next/image";
+import Container from "@/components/Container";
+
 
 export function Resources() {
     return (
         <section className="w-full h-[auto] flex padding-x-all-sections pt-12 pb-3 md:pt-20 bg-[#EDFDF2] md:pb-0">
-            <div className="relative m-auto flex flex-col items-center max-w-[1224px]">
+            <Container>
                 <div className="z-10 text-center m-auto mb-8">
                     <h2 className="text-3xl md:text-5xl text-black font-semibold font-bold mb-4 text-base-text text-center">
                         Nosso principais recursos
@@ -181,7 +183,7 @@ export function Resources() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }
