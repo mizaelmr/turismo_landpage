@@ -1,0 +1,104 @@
+{
+    "hero": {
+      "title": "Seu destino, nosso comando.",
+      "subtitle": "Transforme a gestão da sua agência de turismo com uma plataforma completa, fácil de usar e pensada para agilizar suas vendas.",
+      "cta_primary": "Experimente Grátis",
+      "cta_secondary": "Fale com um Especialista"
+    },
+    "features": {
+      "title": "Tudo que sua agência precisa em um só lugar",
+      "items": [
+        {
+          "icon": "calendar",
+          "title": "Gestão de Pacotes",
+          "description": "Crie, edite e publique pacotes de viagem com datas, valores e itinerários completos de forma intuitiva."
+        },
+        {
+          "icon": "user-group",
+          "title": "Reservas Simples e Rápidas",
+          "description": "Facilite o processo de reservas com um sistema otimizado para desktop e dispositivos móveis."
+        },
+        {
+          "icon": "bus",
+          "title": "Mapa de Assentos",
+          "description": "Permita que seus clientes escolham os assentos no ônibus com um mapa interativo e atualizado em tempo real."
+        },
+        {
+          "icon": "credit-card",
+          "title": "Cobrança Automática",
+          "description": "Gere boletos e envie cobranças com lembretes automáticos para evitar inadimplência."
+        },
+        {
+          "icon": "chart-bar",
+          "title": "Dashboard Inteligente",
+          "description": "Tenha controle total com relatórios de vendas, reservas confirmadas e projeções financeiras."
+        }
+      ]
+    },
+    "about": {
+      "title": "Por que o YourPilot?",
+      "text": "Criado por quem entende de turismo, o YourPilot nasceu para simplificar o dia a dia das agências, automatizando processos, economizando tempo e potencializando vendas com tecnologia intuitiva e acessível."
+    },
+    "testimonials": {
+      "title": "Depoimentos de quem já usa",
+      "items": [
+        {
+          "name": "Juliana M.",
+          "role": "Dona da JM Turismo",
+          "text": "O sistema é intuitivo, rápido e facilitou muito nossa rotina. Conseguimos vender mais e organizar melhor nossas viagens."
+        },
+        {
+          "name": "Carlos Silva",
+          "role": "Gestor da Agência Viajart",
+          "text": "A parte do mapa de assentos foi um diferencial. Meus clientes amaram poder escolher a poltrona na hora da reserva."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Planos para todos os tamanhos de agência",
+      "subtitle": "Escolha o plano ideal para sua operação",
+      "plans": [
+        {
+          "name": "Essencial",
+          "price": "R$ 97/mês",
+          "features": [
+            "Cadastro de pacotes ilimitados",
+            "Gestão de reservas",
+            "Acesso via desktop e celular",
+            "Suporte via chat"
+          ]
+        },
+        {
+          "name": "Profissional",
+          "price": "R$ 147/mês",
+          "features": [
+            "Tudo do Essencial",
+            "Integração com WhatsApp",
+            "Painel financeiro com relatórios",
+            "Cobrança automática"
+          ]
+        },
+        {
+          "name": "Agência Expert",
+          "price": "R$ 197/mês",
+          "features": [
+            "Tudo do Profissional",
+            "Mapa de assentos com reservas em tempo real",
+            "Acesso multiusuário",
+            "Suporte prioritário"
+          ]
+        }
+      ]
+    },
+    "cta_final": {
+      "title": "Pronto para decolar sua agência?",
+      "subtitle": "Cadastre-se agora e tenha 7 dias grátis para testar todas as funcionalidades!",
+      "button": "Criar Conta Grátis"
+    },
+    "footer": {
+      "company": "YourPilot Tecnologia",
+      "menu": ["Início", "Funcionalidades", "Planos", "Contato"],
+      "legal": ["Termos de Uso", "Política de Privacidade"]
+    }
+  }
+  

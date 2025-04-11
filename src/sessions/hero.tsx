@@ -5,6 +5,7 @@ import arrowright from "../../public/arrow-right-R7RZTDAN.svg";
 import Image from "next/image";
 import ButtonComponent from "../components/button";
 import Container from "@/components/Container";
+import Mock from "@/mock/mock.json";
 
 export function Hero() {
   return (
@@ -134,25 +135,10 @@ export function Hero() {
           <div className="sm:rounded-2xl h-full w-full lg:w-auto">
             <div className="relative flex flex-col items-center pt-0 py-8 sm:py-12 lg:py-16 lg:items-start">
               <h1 className="max-w-[590px] text-base-text text-3xl font-semibold md:leading-[64px] text-center tracking-tight sm:text-5xl lg:max-w-[460px] lg:text-5xl lg:text-left lg:m-0 xl:max-w-[550px] xl:text-6xl">
-                Controle financeiro pessoal com toda a
-                <div className="inline-block relative z-10">
-                  <span className="text-transparent bg-clip-text z-20 bg-[#129E3F]">
-                    praticidade
-                  </span>
-                  <Image
-                    alt="separator"
-                    className="absolute -left-1.5 -right-1 -bottom-[2px] -z-10 hidden md:flex"
-                    src={traceborder}
-                    height={200}
-                    width={300}
-                  />
-                </div>
-                &nbsp;que a planilha não te oferece
+                {Mock.hero.title}
               </h1>
               <p className="mt-6 mb-8 max-w-[400px] text-base font-normal text-center font-light text-[#454843] lg:text-left lg:mx-0 lg:max-w-[520px]">
-                Organize seu dinheiro em tempo real em uma solução completa,
-                prática e segura. Tenha o controle de finanças que você sempre
-                quis!
+                {Mock.hero.subtitle}
               </p>
               <a
                 className="rounded-lg text-base tracking-tig transition-colors ease-in-out duration-300 select-none inline-flex justify-center items-center drop-shadow-green-button-drop-shadow font-normal text-white font-semibold py-2 pl-6 pr-2 bg-[#129E3F] hover:bg-[#006A33]"
