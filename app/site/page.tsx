@@ -15,8 +15,8 @@ export default function Home() {
       <Financial />
       <Pag2 />
       <Resources />
-      <Questions />
       <Feedback />
+      <Questions />
       <Footer />
     </main>
   );
