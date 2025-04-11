@@ -11,8 +11,7 @@ export function Hero() {
     <section className="bg-[#edfdf2] text-black relative overflow-hidden">
       <header className="h-28 flex-none padding-x-all-sections bg-[#EDFDF2]">
         <div className="relative">
-          <Container>
-            
+          <Container flexCol={false}>            
             <div className="flex absolute bottom-0 lg:relative lg:top-0 lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Organizze</span>
