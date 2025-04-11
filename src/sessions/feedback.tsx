@@ -7,6 +7,7 @@ import Container from "@/components/Container";
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
+import Mock from "@/mock/mock.json";
 
 
 export function Feedback() {
@@ -58,12 +59,12 @@ export function Feedback() {
                         O que eles estão falando
                     </p>
                     <h2 className="max-w-[700px] text-black mb-2 md:mb-10 text-3xl md:text-5xl mx-auto text-center text-base-text font-bold">
-                        Veja porquê nossos clientes amam o Organizze
+                        {Mock.testimonials.title}
                     </h2>
                 </div>
-                <div style={{width: '922px !important'}}  >
+                <div style={{ width: '922px !important' }}  >
                     <Swiper
-                        slidesPerView={6}
+                        slidesPerView="auto"
                         spaceBetween={10}
                         loop={true}
                         pagination={{
@@ -76,9 +77,9 @@ export function Feedback() {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="px-4"
                     >
-                        {feedbacks.map((feedback, index) => (
+                        {Mock.testimonials.items.map((feedback, index) => (
                             <SwiperSlide className="max-w-[300px]">
-                                <CradFeedback key={index} name={feedback.name} title={feedback.title} text={feedback.text} />
+                                <CradFeedback key={index} name={feedback.name} title={feedback.role} text={feedback.text} />
                             </SwiperSlide>
                         ))}
                     </Swiper>

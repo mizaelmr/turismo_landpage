@@ -1,5 +1,4 @@
 import logo from "../../public/logo-AQ2YPMYN.svg";
-import traceborder from "../../public/traced-border@2x-AJ4X7YYM.png";
 import heromockup from "../../public/hero-mockup-app-organizze-F7HBQCLE.webp";
 import arrowright from "../../public/arrow-right-R7RZTDAN.svg";
 import Image from "next/image";
@@ -12,7 +11,7 @@ export function Hero() {
     <section className="bg-[#edfdf2] text-black relative overflow-hidden">
       <header className="h-28 flex-none padding-x-all-sections bg-[#EDFDF2]">
         <div className="relative">
-          <Container flexCol={false}>            
+          <Container flexCol={true}>            
             <div className="flex absolute bottom-0 lg:relative lg:top-0 lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Organizze</span>
@@ -144,7 +143,7 @@ export function Hero() {
                 className="rounded-lg text-base tracking-tig transition-colors ease-in-out duration-300 select-none inline-flex justify-center items-center drop-shadow-green-button-drop-shadow font-normal text-white font-semibold py-2 pl-6 pr-2 bg-[#129E3F] hover:bg-[#006A33]"
                 href="https://auth.organizze.com.br/cadastro"
               >
-                Teste gratuitamente{/*<!-- -->*/}
+                {Mock.hero.cta_primary}
                 <div className="ml-4 bg-[#0D772F] rounded-md w-10 h-10 inline-flex justify-center items-center">
                   <Image
                     src={arrowright}

@@ -5,6 +5,7 @@ import facebook from "../../public/facebook-logo.svg";
 import linkedin from "../../public/linkedin-logo.svg";
 import xLogo from "../../public/x-logo.svg";
 import Container from "@/components/Container";
+import Mock from "@/mock/mock.json";
 
 export function Footer() {
     return (
@@ -13,7 +14,7 @@ export function Footer() {
                 <div className="flex flex-col items-center lg:flex-row lg:justify-between mb-8 lg:mb-0">
 
                     <a href="/">
-                        <span className="sr-only">Organizze</span>
+                        <span className="sr-only">{Mock.footer.company}</span>
                         <Image
                             src={logo}
                             alt="Logo Organizze"
