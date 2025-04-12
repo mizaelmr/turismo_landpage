@@ -14,7 +14,7 @@ export function Footer() {
                 <div className="flex flex-col items-center lg:flex-row lg:justify-between mb-8 lg:mb-0">
 
                     <a href="/">
-                        <span className="sr-only">{Mock.sessions[6]?.company}
+                        <span className="sr-only">{Mock.sessions[6]?.company_name || "Default Company Name"}
                         </span>
                         <Image
                             src={logo}

@@ -77,7 +77,7 @@ export function Feedback() {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="px-4"
                     >
-                        {Mock.sessions[2].testimonials.map((feedback, index) => (
+                        {Mock.sessions[2]?.testimonials?.map((feedback, index) => (
                             <SwiperSlide key={index} className="max-w-[300px]">
                                 <CradFeedback
                                     name={feedback.name}

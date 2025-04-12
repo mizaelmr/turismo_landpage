@@ -162,6 +162,7 @@
     {
       "id": 6,
       "type": "contact",
+      "company_name": "YourPilot",
       "title": "Fale com a gente",
       "subtitle": "Quer saber mais ou tem alguma dúvida?",
       "form": {
