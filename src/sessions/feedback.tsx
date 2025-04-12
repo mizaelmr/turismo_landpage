@@ -35,7 +35,7 @@ export function Feedback() {
         {
             name: 'FulanoX',
             title: 'O melhor até agora',
-            text: 'Com o Organizze passei a ter total controle financeiro da minha casa e do meu negócio. A possibilidade de sincronizar contas, receber alertas e acompanhar metas faz toda a diferença. É o app mais completo e confiável que já usei.'
+            text: 'Com o yourPilot passei a ter total controle financeiro da minha casa e do meu negócio. A possibilidade de sincronizar contas, receber alertas e acompanhar metas faz toda a diferença. É o app mais completo e confiável que já usei.'
         },
         {
             name: 'BeltranoZ',
@@ -52,14 +52,14 @@ export function Feedback() {
 
 
     return (
-        <section className="w-full flex flex-col py-12 md:py-16 relative bg-[#EDFDF2]">
+        <section className="w-full flex flex-col py-12 md:py-16 relative bg-[#f1f5fd]">
             <Container>
                 <div>
                     <p className="text-base font-normal leading-4 font-serif text-[#3A424A] text-center mb-3">
                         O que eles estão falando
                     </p>
                     <h2 className="max-w-[700px] text-black mb-2 md:mb-10 text-3xl md:text-5xl mx-auto text-center text-base-text font-bold">
-                        {Mock.testimonials.title}
+                        {Mock.sessions[2].title}
                     </h2>
                 </div>
                 <div style={{ width: '922px !important' }}  >
@@ -77,11 +77,16 @@ export function Feedback() {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="px-4"
                     >
-                        {Mock.testimonials.items.map((feedback, index) => (
-                            <SwiperSlide className="max-w-[300px]">
-                                <CradFeedback key={index} name={feedback.name} title={feedback.role} text={feedback.text} />
+                        {Mock.sessions[2].testimonials.map((feedback, index) => (
+                            <SwiperSlide key={index} className="max-w-[300px]">
+                                <CradFeedback
+                                    name={feedback.name}
+                                    title={feedback.role}
+                                    text={feedback.quote}
+                                />
                             </SwiperSlide>
                         ))}
+
                     </Swiper>
                 </div>
             </Container>

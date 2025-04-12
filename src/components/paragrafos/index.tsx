@@ -12,11 +12,11 @@ const ParagrafoComponent: React.FC<paragrafo> = ({ number, icon, title, descript
   return (
     <div className="lg:mb-0">
       <div className="flex flex-row md:flex-col">
-        <span className="rounded-xl mb-4 max-w-[47px] bg-[#DFFCE9] text-[#0D772F] flex items-center justify-center px-3 pt-3 pb-2 text-center text-xl font-bold leading-0 tracking-wider mr-3">
+        <span className="rounded-xl mb-4 max-w-[47px] bg-[#c3d7f8] text-[#071e45] flex items-center justify-center px-3 pt-3 pb-2 text-center text-xl font-bold leading-0 tracking-wider mr-3">
           {icon ? (
             <Image
               src={icon}
-              alt="Logo Organizze"
+              alt="Logo yourPilot"
               width={188}
               height={40}
               className="object-contain"

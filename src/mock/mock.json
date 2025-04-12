@@ -1,104 +1,207 @@
 {
-    "hero": {
-      "title": "Seu destino, nosso comando.",
-      "subtitle": "Transforme a gestão da sua agência de turismo com uma plataforma completa, fácil de usar e pensada para agilizar suas vendas.",
+  "sessions": [
+    {
+      "id": 1,
+      "type": "hero",
+      "title": "Seu destino, nosso comando. Sistema de gestão de viagens feita para agências que querem vender mais.",
+      "subtitle": "Diga adeus às planilhas! Com o YourPilot você gerencia sua agência com facilidade, publica pacotes em um site moderno e vende 24 horas por dia, 7 dias por semana.",
       "cta_primary": "Experimente Grátis",
       "cta_secondary": "Fale com um Especialista"
     },
-    "features": {
-      "title": "Tudo que sua agência precisa em um só lugar",
+    {
+      "id": 2,
+      "type": "features",
+      "title": "Tecnologia que simplifica e impulsiona sua agência",
+      "subtitle": "Um sistema completo que substitui planilhas, centraliza tudo em um só lugar e te dá o controle total das operações, de onde estiver.",
       "items": [
         {
-          "icon": "calendar",
-          "title": "Gestão de Pacotes",
-          "description": "Crie, edite e publique pacotes de viagem com datas, valores e itinerários completos de forma intuitiva."
+          "icon": "globe",
+          "title": "Gestão de Pacotes Online",
+          "description": "Crie, edite e publique pacotes de viagem com facilidade, e tenha acesso a tudo de qualquer lugar, direto do celular ou computador."
         },
         {
-          "icon": "user-group",
-          "title": "Reservas Simples e Rápidas",
-          "description": "Facilite o processo de reservas com um sistema otimizado para desktop e dispositivos móveis."
+          "icon": "calendar-check",
+          "title": "Reservas Automatizadas",
+          "description": "Chega de anotar em papel! Controle todas as reservas com agilidade, notificações automáticas e histórico completo de cada passageiro."
         },
         {
-          "icon": "bus",
-          "title": "Mapa de Assentos",
-          "description": "Permita que seus clientes escolham os assentos no ônibus com um mapa interativo e atualizado em tempo real."
+          "icon": "map",
+          "title": "Mapa de Assentos Interativo",
+          "description": "Permita que seus clientes escolham suas poltronas no momento da reserva com visualização em tempo real da ocupação do ônibus."
+        },
+        {
+          "icon": "qrcode",
+          "title": "Conferência de Embarque com QR Code",
+          "description": "Passagens digitais (tickets de embarque) na wallet do celular do cliente, permitindo conferência no momento do embarque com agilidade e precisão."
+        },        
+        {
+          "icon": "bar-chart",
+          "title": "Relatórios Inteligentes",
+          "description": "Acompanhe vendas, reservas, ocupação e desempenho financeiro com gráficos claros e relatórios atualizados em tempo real."
         },
         {
           "icon": "credit-card",
-          "title": "Cobrança Automática",
-          "description": "Gere boletos e envie cobranças com lembretes automáticos para evitar inadimplência."
-        },
-        {
-          "icon": "chart-bar",
-          "title": "Dashboard Inteligente",
-          "description": "Tenha controle total com relatórios de vendas, reservas confirmadas e projeções financeiras."
+          "title": "Painel Financeiro Integrado",
+          "description": "Controle pagamentos, métodos de cobrança, status de recebimento e obtenha uma visão completa das suas receitas e despesas."
         }
       ]
-    },
-    "about": {
-      "title": "Por que o YourPilot?",
-      "text": "Criado por quem entende de turismo, o YourPilot nasceu para simplificar o dia a dia das agências, automatizando processos, economizando tempo e potencializando vendas com tecnologia intuitiva e acessível."
-    },
-    "testimonials": {
-      "title": "Depoimentos de quem já usa",
-      "items": [
+    },    
+    {
+      "id": 3,
+      "type": "testimonial",
+      "title": "Quem já embarcou com a gente",
+      "subtitle": "Depoimentos de quem confia no YourPilot",
+      "testimonials": [
         {
-          "name": "Juliana M.",
-          "role": "Dona da JM Turismo",
-          "text": "O sistema é intuitivo, rápido e facilitou muito nossa rotina. Conseguimos vender mais e organizar melhor nossas viagens."
+          "name": "Mariana Souza",
+          "role": "Fundadora da Rota Feliz Turismo",
+          "photo": "https://example.com/images/mariana.jpg",
+          "quote": "O sistema me ajudou a organizar minhas viagens e triplicou minhas reservas em menos de 3 meses."
         },
         {
-          "name": "Carlos Silva",
-          "role": "Gestor da Agência Viajart",
-          "text": "A parte do mapa de assentos foi um diferencial. Meus clientes amaram poder escolher a poltrona na hora da reserva."
+          "name": "Carlos Almeida",
+          "role": "CEO da Expedição Nordeste",
+          "photo": "https://example.com/images/carlos.jpg",
+          "quote": "Simples, rápido e com suporte incrível. Recomendo para qualquer agência que quer crescer."
+        },
+        {
+          "name": "Luciana Pereira",
+          "role": "Diretora da Giramundo Viagens",
+          "photo": "https://example.com/images/luciana.jpg",
+          "quote": "Com o YourPilot, ganhamos tempo e profissionalismo. Meus clientes adoram o novo sistema de reserva com QR Code!"
+        },
+        {
+          "name": "Rafael Lima",
+          "role": "Gestor da TopTrip Bahia",
+          "photo": "https://example.com/images/rafael.jpg",
+          "quote": "A funcionalidade de embarque com QR Code e o controle financeiro integrado mudaram o jogo na nossa operação."
+        },
+        {
+          "name": "Juliana Costa",
+          "role": "Sócia da Rumo Certo Turismo",
+          "photo": "https://example.com/images/juliana.jpg",
+          "quote": "Finalmente encontrei um sistema que entende a rotina de uma agência pequena. Tudo ficou mais fácil!"
+        },
+        {
+          "name": "Eduardo Santana",
+          "role": "Responsável Comercial - Destino Sertão",
+          "photo": "https://example.com/images/eduardo.jpg",
+          "quote": "Antes era tudo no Excel, agora tenho relatórios, mapa de assentos e vendas 24h por dia. É outro nível!"
+        },
+        {
+          "name": "Renata Oliveira",
+          "role": "Agente da Brisa Viagens",
+          "photo": "https://example.com/images/renata.jpg",
+          "quote": "A equipe da YourPilot me deu todo o suporte que eu precisava. Hoje minha agência parece uma empresa grande."
         }
       ]
-    },
-    "pricing": {
+    },    
+    {
+      "id": 4,
+      "type": "plans",
       "title": "Planos para todos os tamanhos de agência",
-      "subtitle": "Escolha o plano ideal para sua operação",
+      "subtitle": "Comece agora e escolha o plano ideal quando estiver pronto",
       "plans": [
         {
-          "name": "Essencial",
-          "price": "R$ 97/mês",
+          "name": "Gratuito",
+          "price": "R$ 0",
+          "description": "Ideal para conhecer a plataforma",
           "features": [
-            "Cadastro de pacotes ilimitados",
-            "Gestão de reservas",
-            "Acesso via desktop e celular",
-            "Suporte via chat"
-          ]
+            "Cadastro de até 3 pacotes",
+            "10 reservas por mês",
+            "Suporte por e-mail"
+          ],
+          "cta": "Começar Grátis"
         },
         {
           "name": "Profissional",
-          "price": "R$ 147/mês",
+          "price": "R$ 97/mês",
+          "description": "Perfeito para agências em crescimento",
           "features": [
-            "Tudo do Essencial",
-            "Integração com WhatsApp",
-            "Painel financeiro com relatórios",
-            "Cobrança automática"
-          ]
+            "Pacotes ilimitados",
+            "Reservas ilimitadas",
+            "Painel financeiro completo",
+            "Suporte via WhatsApp"
+          ],
+          "cta": "Assinar Agora"
         },
         {
-          "name": "Agência Expert",
+          "name": "Master",
           "price": "R$ 197/mês",
+          "description": "Para quem quer o máximo controle",
           "features": [
-            "Tudo do Profissional",
-            "Mapa de assentos com reservas em tempo real",
-            "Acesso multiusuário",
-            "Suporte prioritário"
-          ]
+            "Todos os recursos do plano Pro",
+            "Múltiplos usuários",
+            "Acesso a relatórios avançados",
+            "Consultoria personalizada"
+          ],
+          "cta": "Quero esse"
         }
       ]
     },
-    "cta_final": {
-      "title": "Pronto para decolar sua agência?",
-      "subtitle": "Cadastre-se agora e tenha 7 dias grátis para testar todas as funcionalidades!",
-      "button": "Criar Conta Grátis"
+    {
+      "id": 5,
+      "type": "faq",
+      "title": "Perguntas Frequentes",
+      "subtitle": "Tire suas dúvidas antes de embarcar",
+      "questions": [
+        {
+          "question": "Preciso ter CNPJ para usar?",
+          "answer": "Não! Qualquer pessoa pode testar e usar o YourPilot, mesmo com CPF."
+        },
+        {
+          "question": "Posso cancelar quando quiser?",
+          "answer": "Sim, não há fidelidade. Você pode cancelar ou trocar de plano a qualquer momento."
+        },
+        {
+          "question": "Como funciona o período gratuito?",
+          "answer": "Você pode testar gratuitamente por 7 dias com acesso a todas as funcionalidades do plano Profissional."
+        }
+      ]
     },
-    "footer": {
-      "company": "YourPilot Tecnologia",
-      "menu": ["Início", "Funcionalidades", "Planos", "Contato"],
-      "legal": ["Termos de Uso", "Política de Privacidade"]
+    {
+      "id": 6,
+      "type": "contact",
+      "title": "Fale com a gente",
+      "subtitle": "Quer saber mais ou tem alguma dúvida?",
+      "form": {
+        "fields": [
+          {
+            "name": "nome",
+            "label": "Nome",
+            "type": "text",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "E-mail",
+            "type": "email",
+            "required": true
+          },
+          {
+            "name": "mensagem",
+            "label": "Mensagem",
+            "type": "textarea",
+            "required": true
+          }
+        ],
+        "cta": "Enviar Mensagem"
+      }
+    },
+    {
+      "id": 7,
+      "type": "footer",
+      "links": [
+        { "label": "Termos de Uso", "url": "/termos" },
+        { "label": "Política de Privacidade", "url": "/privacidade" },
+        { "label": "Contato", "url": "/contato" }
+      ],
+      "social": [
+        { "platform": "instagram", "url": "https://instagram.com/yourpilot" },
+        { "platform": "facebook", "url": "https://facebook.com/yourpilot" },
+        { "platform": "whatsapp", "url": "https://wa.me/5599999999999" }
+      ],
+      "copyright": "© 2025 YourPilot. Todos os direitos reservados."
     }
-  }
-  
+  ]
+}

@@ -262,7 +262,7 @@ export function Pag2() {
             <Image
               className="object-cover w-[100%]"
               src={phone01}
-              alt="Imagem do Organizze, um app para controle financeiro pessoal, sendo exibido na tela de um celular"
+              alt="Imagem do yourPilot, um app para controle financeiro pessoal, sendo exibido na tela de um celular"
             />
           </div>
           <div className="md:mt-6 flex flex-col items-center lg:items-start w-full lg:w-auto">

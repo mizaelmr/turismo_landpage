@@ -6,7 +6,7 @@ import Container from "@/components/Container";
 
 export function Resources() {
     return (
-        <section className="w-full h-[auto] flex padding-x-all-sections pt-12 pb-3 md:pt-20 bg-[#EDFDF2] md:pb-0">
+        <section className="w-full h-[auto] flex padding-x-all-sections pt-12 pb-3 md:pt-20 bg-[#f1f5fd] md:pb-0">
             <Container>
                 <div className="z-10 text-center m-auto mb-8">
                     <h2 className="text-3xl md:text-5xl text-black font-semibold font-bold mb-4 text-base-text text-center">
@@ -24,7 +24,7 @@ export function Resources() {
                                     <div className="mt-2 md:mt-5 flex flex-col items-center md:items-start text-center md:text-left relative">
                                         <Image
                                             src={steps}
-                                            alt="Logo Organizze"
+                                            alt="Logo yourPilot"
                                             width={40}
                                             height={40}
                                             className="object-contain mb-2"
@@ -43,7 +43,7 @@ export function Resources() {
                                     <div className="mt-2 md:mt-5 flex flex-col items-center md:items-start text-center md:text-left relative">
                                         <Image
                                             src={steps}
-                                            alt="Logo Organizze"
+                                            alt="Logo yourPilot"
                                             width={40}
                                             height={40}
                                             className="object-contain mb-2"
@@ -61,7 +61,7 @@ export function Resources() {
                                     <div className="mt-2 md:mt-5 flex flex-col items-center md:items-start text-center md:text-left relative">
                                         <Image
                                             src={steps}
-                                            alt="Logo Organizze"
+                                            alt="Logo yourPilot"
                                             width={40}
                                             height={40}
                                             className="object-contain mb-2"
@@ -80,7 +80,7 @@ export function Resources() {
                                         <div>
                                             <Image
                                                 src={steps}
-                                                alt="Logo Organizze"
+                                                alt="Logo yourPilot"
                                                 width={40}
                                                 height={40}
                                                 className="object-contain"
@@ -98,7 +98,7 @@ export function Resources() {
                             <div className="flex justify-center ">
                                 <Image
                                     src={phone}
-                                    alt="phone Organizze"
+                                    alt="phone yourPilot"
                                     className="z-10 hidden lg:block w-[600px] m-[auto] lg:m-[unset] translate-x-[4.375rem] lg:translate-x-[5.4rem]"
                                 />
                             </div>
@@ -108,7 +108,7 @@ export function Resources() {
                                         <div>
                                             <Image
                                                 src={steps}
-                                                alt="Logo Organizze"
+                                                alt="Logo yourPilot"
                                                 width={40}
                                                 height={40}
                                                 className="object-contain"
@@ -127,7 +127,7 @@ export function Resources() {
                                         <div>
                                             <Image
                                                 src={steps}
-                                                alt="Logo Organizze"
+                                                alt="Logo yourPilot"
                                                 width={40}
                                                 height={40}
                                                 className="object-contain"
@@ -146,7 +146,7 @@ export function Resources() {
                                         <div>
                                             <Image
                                                 src={steps}
-                                                alt="Logo Organizze"
+                                                alt="Logo yourPilot"
                                                 width={40}
                                                 height={40}
                                                 className="object-contain"
@@ -165,7 +165,7 @@ export function Resources() {
                                         <div>
                                             <Image
                                                 src={steps}
-                                                alt="Logo Organizze"
+                                                alt="Logo yourPilot"
                                                 width={40}
                                                 height={40}
                                                 className="object-contain"

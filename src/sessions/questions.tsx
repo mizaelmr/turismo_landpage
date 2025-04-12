@@ -47,20 +47,20 @@ export function Questions() {
                         Perguntas frequentes
                     </h2>
                     <CardAnswer
-                        question="O que é o Organizze?"
-                        answer="O Organizze é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="O que é o yourPilot?"
+                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
                     />
                     <CardAnswer
-                        question="O que é o Organizze?"
-                        answer="O Organizze é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="O que é o yourPilot?"
+                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
                     />
                     <CardAnswer
-                        question="O que é o Organizze?"
-                        answer="O Organizze é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="O que é o yourPilot?"
+                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
                     />
                     <CardAnswer
-                        question="O que é o Organizze?"
-                        answer="O Organizze é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="O que é o yourPilot?"
+                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
                     />
                 </div>
                 <div className="w-full bg-[#FFF0E0] mt-10 rounded-[16px] px-6 py-6 lg:py-9 lg:px-10 flex flex-col items-center sm:flex sm:flex-col sm:items-center md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:items-center lg:justify-between xl:w-full max-w-[922px] xl:flex xl:flex-row xl:items-center xl:justify-between">
@@ -70,7 +70,7 @@ export function Questions() {
 
                         </h3>
                         <span className="max-w-[627px] font-normal mb-4 lg:mb-0 block text-sm lg:text-base text-[#454843] leading-6 text-center lg:text-left">
-                            Caso tenha ficado com alguma dúvida sobre o uso do app, nossa Central de Ajuda está cheia de dicas incríveis para você aproveitar o Organizze ao máximo!
+                            Caso tenha ficado com alguma dúvida sobre o uso do app, nossa Central de Ajuda está cheia de dicas incríveis para você aproveitar o yourPilot ao máximo!
                         </span>
                     </div>
                     <a className="rounded-lg text-base tracking-tig transition-colors font-normal ease-in-out duration-300 select-none inline-flex min-w-fit items-center text-[#1A1C19] font-semibold py-4 px-6 bg-[#FEB872] hover:bg-[#FEB882]" href="">

@@ -28,8 +28,8 @@ export function Financial() {
                             <li className="text-base font-normal ml-3 font-normal leading-6 text-[#454843]">Item 3</li>
                         </ul>
                         <a
-                            className="rounded-lg text-base tracking-tig transition-colors font-normal ease-in-out duration-300 select-none inline-flex min-w-fit items-center text-[#FBF7EA] font-semibold py-3 px-6 bg-[#129E3F] hover:bg-[#006A33]"
-                            href="https://auth.organizze.com.br/cadastro"
+                            className="rounded-lg text-base tracking-tig transition-colors font-normal ease-in-out duration-300 select-none inline-flex min-w-fit items-center text-[#FBF7EA] font-semibold py-3 px-6 bg-[#104398] hover:bg-[#006A33]"
+                            href="https://auth.yourPilot.com.br/cadastro"
                         >
                             Teste gratuitamente
                         </a>
@@ -58,31 +58,7 @@ export function Financial() {
                                         40,3 mil avaliações
                                     </span>
                                     <div className="flex mt-2 space-x-1">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
+                                        img
                                     </div>
                                 </div>
                             </div>
@@ -110,31 +86,7 @@ export function Financial() {
                                         40,3 mil avaliações
                                     </span>
                                     <div className="flex mt-2 space-x-1">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_3202_50950)">
-                                            <path d="M9.99935 14.392L15.1494 17.5003L13.7827 11.642L18.3327 7.70033L12.341 7.19199L9.99935 1.66699L7.65768 7.19199L1.66602 7.70033L6.21602 11.642L4.84935 17.5003L9.99935 14.392Z" fill="#DAB43B" />
-                                        </g>
-                                        </svg>
+                                        img 2
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +98,7 @@ export function Financial() {
                         className="absolute right-[-200px] top-[-150px] xl:max-w-[750px] 3xl:hidden"
                         style={{ objectPosition: "20px bottom" }}
                         src={financialScreen}
-                        alt="Imagem do Organizze sendo exibido na sua versão para computador, uma solução para gestão financeira pessoal e controle de contas"
+                        alt="Imagem do yourPilot sendo exibido na sua versão para computador, uma solução para gestão financeira pessoal e controle de contas"
                     />
                 </div>
             </Container>

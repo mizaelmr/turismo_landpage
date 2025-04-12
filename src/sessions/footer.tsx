@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/logo-AQ2YPMYN.svg";
+import logo from "../../public/logo_pilot.png";
 import instagram from "../../public/instagram-logo.svg";
 import facebook from "../../public/facebook-logo.svg";
 import linkedin from "../../public/linkedin-logo.svg";
@@ -14,13 +14,14 @@ export function Footer() {
                 <div className="flex flex-col items-center lg:flex-row lg:justify-between mb-8 lg:mb-0">
 
                     <a href="/">
-                        <span className="sr-only">{Mock.footer.company}</span>
+                        <span className="sr-only">{Mock.sessions[6]?.company}
+                        </span>
                         <Image
                             src={logo}
-                            alt="Logo Organizze"
+                            alt="Logo yourPilot"
                             width={188}
                             height={40}
-                            className="object-contain"
+                            className="object-contain mr-4"
                         // className="flex h-8 w-auto sm:h-10 lg:h-auto"
                         />
                     </a>
@@ -40,33 +41,24 @@ export function Footer() {
                                 Quem somos
                             </a>
                         </div>
-                        <div className="px-5 py-2">
-                            <a className="text-base text-[#454843] font-normal hover:text-gray-900 transition duration-200 ease-in-out" href="">
-                                Quem somos
-                            </a>
-                        </div>
-                        <div className="px-5 py-2">
-                            <a className="text-base text-[#454843] font-normal hover:text-gray-900 transition duration-200 ease-in-out" href="">
-                                Quem somos
-                            </a>
-                        </div>
+                        
                     </nav>
                     <div>
-                        <a className="rounded-lg text-base tracking-tig transition-colors font-normal ease-in-out duration-300 select-none inline-flex min-w-fit items-center text-[#FBF7EA] font-semibold py-3 px-6 bg-[#129E3F] hover:bg-[#006A33]" href="">
+                        <a className="ml-4 rounded-lg text-base tracking-tig transition-colors font-normal ease-in-out duration-300 select-none inline-flex min-w-fit items-center text-[#FBF7EA] font-semibold py-3 px-6 bg-[#104398] hover:bg-[#006A33]" href="">
                             começar agora
                         </a>
                     </div>
                 </div>
                 <div className="w-full overflow-hidden flex flex-col-reverse items-center lg:flex-row lg:items-center lg:justify-between lg:mt-10">
                     <p className="text-center text-sm text-[#454843] font-normal lg:text-left mt-6 lg:mt-0">
-                        ©2024 Organizze Tecnologia Ltda. CNPJ 35.381.093/0001-26
+                        ©2025
                     </p>
                     <div className="flex flex-col lg:flex-row lg:space-x-10 items-center">
                         <div className="flex justify-center space-x-6 mb-6 lg:mb-0">
-                            <a href="https://www.linkedin.com/company/organizze/" target="_blank" rel="noreferrer" className="text-[#454843] hover:text-gray-500 transition duration-200 ease-in-out">
+                            <a href="#" target="_blank" rel="noreferrer" className="text-[#454843] hover:text-gray-500 transition duration-200 ease-in-out">
                                 <Image
                                     src={linkedin}
-                                    alt="Logo Organizze"
+                                    alt="Logo yourPilot"
                                     width={22}
                                     height={22}
                                     className="object-contain"
@@ -75,7 +67,7 @@ export function Footer() {
                             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="text-[#454843] hover:text-gray-500 transition duration-200 ease-in-out">
                                 <Image
                                     src={instagram}
-                                    alt="Logo Organizze"
+                                    alt="Logo yourPilot"
                                     width={22}
                                     height={22}
                                     className="object-contain"
@@ -84,7 +76,7 @@ export function Footer() {
                             <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="text-[#454843] hover:text-gray-500 transition duration-200 ease-in-out">
                                 <Image
                                     src={xLogo}
-                                    alt="Logo Organizze"
+                                    alt="Logo yourPilot"
                                     width={22}
                                     height={22}
                                     className="object-contain"
@@ -93,7 +85,7 @@ export function Footer() {
                             <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="text-[#454843] hover:text-gray-500 transition duration-200 ease-in-out">
                                 <Image
                                     src={facebook}
-                                    alt="Logo Organizze"
+                                    alt="Logo yourPilot"
                                     width={22}
                                     height={22}
                                     className="object-contain"

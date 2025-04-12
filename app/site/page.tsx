@@ -13,9 +13,9 @@ export default function Home() {
     <main>
       <Hero />
       <Understand />
-      <Financial />
-      <Pag2 />
-      <Resources />
+      {/* <Financial /> */}
+      {/* <Pag2 /> */}
+      {/* <Resources /> */}
       <Feedback />
       <Questions />
       <Footer />
