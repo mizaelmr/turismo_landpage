@@ -42,7 +42,7 @@ export function Questions() {
     return (
         <section className="w-full flex flex-col items-center px-3 py-12 md:py-20 bg-[#FEFDF9]">
             <Container>
-                <div className="mb-6 lg:mb-10 w-full max-w-[922px]">
+                <div className="w-full max-w-[922px]">
                     <h2 className="text-black md:text-5xl font-bold text-center mb-6 lg:mb-10">
                         Perguntas frequentes
                     </h2>

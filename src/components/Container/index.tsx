@@ -7,7 +7,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children, flexCol }) => {
   return (
-    <div className={`flex ${flexCol ? 'flex-row' : 'flex-col'} justify-center items-center max-w-[1224px] mx-auto space-x-24 py-12 lg:py-6 lg:justify-start`}>
+    <div className={`flex ${flexCol ? 'flex-row' : 'flex-col'} justify-center items-center max-w-[1224px] mx-auto py-12 lg:py-6 lg:justify-start`}>
       {children}
     </div>
   );
