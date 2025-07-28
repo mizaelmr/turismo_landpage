@@ -48,19 +48,23 @@ export function Questions() {
                     </h2>
                     <CardAnswer
                         question="O que é o yourPilot?"
-                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        answer="O yourPilot Turismo é um sistema inteligente que permite que agências e guias turísticos gerenciem clientes, cadastrem viagens e organizem destinos de maneira rápida e descomplicada."
                     />
                     <CardAnswer
-                        question="O que é o yourPilot?"
-                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="Quais funcionalidades o sistema oferece?"
+                        answer="O sistema permite que você cadastre e gerencie seus clientes, crie pacotes de viagem personalizados, organize destinos como Salvador, Morro de São Paulo e outros locais turísticos, além de acompanhar o histórico de viagens e reservas de forma centralizada em um único painel."
                     />
                     <CardAnswer
-                        question="O que é o yourPilot?"
-                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="Preciso instalar algo no meu computador?"
+                        answer="Não é necessário instalar nada. O yourPilot Turismo é uma plataforma totalmente online, podendo ser acessada diretamente pelo navegador em qualquer dispositivo com internet."
                     />
                     <CardAnswer
-                        question="O que é o yourPilot?"
-                        answer="O yourPilot é um aplicativo de controle financeiro que ajuda você a organizar suas contas, despesas e receitas de forma simples e prática."
+                        question="Posso cadastrar quantas viagens e destinos quiser?"
+                        answer="Sim, o sistema foi desenvolvido para oferecer liberdade total ao usuário. Você pode cadastrar quantas viagens, pacotes e destinos desejar, sem limites de uso, especialmente no plano completo."
+                    />
+                    <CardAnswer
+                        question="É seguro armazenar os dados dos meus clientes?"
+                        answer="Sim. A segurança dos dados é uma prioridade no yourPilot Turismo. Toda a plataforma utiliza criptografia e infraestrutura segura para garantir a proteção das informações dos seus clientes e do seu negócio."
                     />
                 </div>
                 <div className="w-full bg-[#FFF0E0] mt-10 rounded-[16px] px-6 py-6 lg:py-9 lg:px-10 flex flex-col items-center sm:flex sm:flex-col sm:items-center md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:items-center lg:justify-between xl:w-full max-w-[922px] xl:flex xl:flex-row xl:items-center xl:justify-between">
