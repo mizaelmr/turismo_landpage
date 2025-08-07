@@ -24,3 +24,30 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom Swiper Styles */
+.testimonials-swiper {
+  padding-bottom: 40px !important;
+}
+
+.testimonials-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+  background: #d1d5db !important;
+  opacity: 0.5;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 4px !important;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  background: #3b82f6 !important;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.testimonials-swiper .swiper-slide {
+  height: auto;
+}

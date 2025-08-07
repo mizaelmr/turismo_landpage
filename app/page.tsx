@@ -1,21 +1,18 @@
-import { Feedback } from "@/sessions/feedback";
-import { Financial } from "@/sessions/financial";
-import { Footer } from "@/sessions/footer";
-import { Hero } from "@/sessions/hero";
-import { Pag2 } from "@/sessions/pag2";
-import { Questions } from "@/sessions/questions";
-import { Resources } from "@/sessions/resources";
-import { Understand } from "@/sessions/understand";
-
+import { Feedback } from "./_sessions/feedback";
+import { Financial } from "./_sessions/financial";
+import { Footer } from "./_sessions/footer";
+import { Hero } from "./_sessions/hero";
+import { Pag2 } from "./_sessions/pag2";
+import { Questions } from "./_sessions/questions";
+import { Resources } from "./_sessions/resources";
+import { Understand } from "./_sessions/understand";
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Understand />
-      {/* <Financial /> */}
-      {/* <Pag2 /> */}
-      {/* <Resources /> */}
+      <Resources />
       <Feedback />
       <Questions />
       <Footer />
