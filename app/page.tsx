@@ -6,6 +6,7 @@ import { Pag2 } from "./_sessions/pag2";
 import { Plans } from "./_sessions/plans";
 import { Questions } from "./_sessions/questions";
 import { Resources } from "./_sessions/resources";
+import { ResultsNumbers } from "./_sessions/resultsNumbers";
 import { Understand } from "./_sessions/understand";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <main>
       <Hero />
       <Understand />
+      <ResultsNumbers />
       <Resources />
       <Feedback />
       <Plans />
