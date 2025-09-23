@@ -8,6 +8,7 @@ import { Questions } from "./_sessions/questions";
 import { Resources } from "./_sessions/resources";
 import { Support } from "./_sessions/support";
 import { Security } from "./_sessions/security";
+import { ResultsNumbers } from "./_sessions/resultsNumbers";
 import { Understand } from "./_sessions/understand";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <main>
       <Hero />
       <Understand />
+      <ResultsNumbers />
       <Resources />
       <Feedback />
       <Plans />
