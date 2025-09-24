@@ -104,7 +104,7 @@ export function Hero() {
 
       {/* Hero Content */}
       <div
-        className="flex items-center bg center bg-cover bg-no-repeat"
+        className="flex items-center bg center bg-cover bg-no-repeat opacity-0.7"
         style={{
           backgroundImage: "url('/imageBackgrond.jpeg')",
         }}

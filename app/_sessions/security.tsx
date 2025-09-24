@@ -1,14 +1,9 @@
 "use client";
 
-import {
-  Lock,
-  ShieldCheck,
-  Cloud,
-  Database,
-} from "@phosphor-icons/react";
+import { Lock, ShieldCheck, Cloud, Database } from "@phosphor-icons/react";
 
-export function Security () {
-const items= [
+export function Security() {
+  const items = [
     {
       icon: <Lock className="w-10 h-10 text-green-600" />,
       title: "SSL Seguro",
@@ -31,8 +26,8 @@ const items= [
     },
   ];
 
-    return (
-         <section className="py-20 bg-white">
+  return (
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Nosso Compromisso com a Sua Segurança
@@ -58,5 +53,5 @@ const items= [
         </div>
       </div>
     </section>
-    )
+  );
 }
