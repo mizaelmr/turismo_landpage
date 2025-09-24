@@ -8,10 +8,10 @@ export function Mobility() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Texto */}
             <div className="lg:w-1/2">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
                 Mobilidade para sua Agência
               </h2>
-              <p className="text-gray-600 mb-6">
+              <p className="text-xl text-gray-600 mb-6">
                 Gerencie sua agência de turismo de onde estiver. Nosso sistema
                 foi projetado para oferecer{" "}
                 <strong>flexibilidade e praticidade</strong> no dia a dia:

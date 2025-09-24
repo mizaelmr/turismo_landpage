@@ -75,31 +75,14 @@ export function ResultsNumbers() {
   return (
     <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-          <div>
-            <h2 className="text-4xl font-bold text-gray-900">
+        <div className="flex flex-col justify-center items-center md:items-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
               Nossos resultados em números
             </h2>
-            <p className="text-gray-600 mt-3 text-lg max-w-xl">
+            <p className="text-xl text-gray-600 mt-3 text-center max-w-xl">
               Mais que depoimentos: métricas reais que mostram o impacto da
               automação na sua agência.
             </p>
-          </div>
-
-          <div className="flex gap-4 mt-6 md:mt-0">
-            <a
-              href="#demo"
-              className="px-5 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-bold rounded-xl shadow-lg transition"
-            >
-              Solicitar demo
-            </a>
-            <a
-              href="#cases"
-              className="px-5 py-3 border border-gray-300 text-gray-700 font-medium rounded-xl hover:bg-gray-100 transition"
-            >
-              Ver cases completos
-            </a>
-          </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

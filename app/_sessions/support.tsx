@@ -3,10 +3,10 @@ export function Support() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
           Suporte Sempre ao Seu Lado
         </h2>
-        <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 mt-3 max-w-2xl mx-auto">
           Conte com nossa equipe de especialistas para tirar dúvidas e aprender
           rapidamente a usar o sistema.
         </p>

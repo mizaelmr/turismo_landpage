@@ -29,10 +29,10 @@ export function Security() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
           Nosso Compromisso com a Sua Segurança
         </h2>
-        <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
           Trabalhamos com os mais altos padrões de segurança e transparência
           para garantir que sua agência de turismo esteja protegida.
         </p>
