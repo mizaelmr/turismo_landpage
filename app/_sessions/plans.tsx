@@ -54,7 +54,7 @@ export function Plans() {
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan) => (
             <div
               key={plan.id}

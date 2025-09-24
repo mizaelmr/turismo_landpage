@@ -1,6 +1,7 @@
 "use client";
 
 import { Lock, ShieldCheck, Cloud, Database } from "@phosphor-icons/react";
+import Container from "../_components/Container";
 
 export function Security() {
   const items = [
@@ -28,7 +29,7 @@ export function Security() {
 
   return (
     <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+      <Container className="text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
           Nosso Compromisso com a Sua Segurança
         </h2>
@@ -51,7 +52,7 @@ export function Security() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

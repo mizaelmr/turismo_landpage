@@ -4,7 +4,7 @@ export function Mobility() {
   return (
     <section className="py-16 bg-white text-black" id="mobilidade">
       <Container>
-        <div className="container mx-auto px-4">
+        <div className="px-0">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Texto */}
             <div className="lg:w-1/2">

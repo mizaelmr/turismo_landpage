@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Container from "../_components/Container";
 
 interface Metric {
   label: string;
@@ -74,7 +75,7 @@ export function ResultsNumbers() {
 
   return (
     <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
+      <Container>
         <div className="flex flex-col justify-center items-center md:items-center mb-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
               Nossos resultados em números
@@ -106,7 +107,7 @@ export function ResultsNumbers() {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
