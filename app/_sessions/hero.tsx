@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "../_components/Container";
 import Mock from "../_mock/mock.json";
+import { Blocks } from "lucide-react";
 
 export function Hero() {
   return (
@@ -104,9 +105,9 @@ export function Hero() {
 
       {/* Hero Content */}
       <div
-        className="flex items-center bg center bg-cover bg-no-repeat opacity-0.7"
+        className="flex items-center bg center bg-cover bg-no-repeat opacity-0.7 "
         style={{
-          backgroundImage: "url('/imageBackgrond.jpeg')",
+          backgroundImage: "url('/imageBackgrond2.jpg')"
         }}
       >
         <Container className="relative z-10">
@@ -119,7 +120,8 @@ export function Hero() {
                 Sistema completo para agências de turismo
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6 drop-shadow-lg">
+              <h1 
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-[#143678] leading-tight mb-6  hero-text opacity-85">
                 {Mock.sessions[0].title}
               </h1>
               <p className="text-xl text-white mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed drop-shadow">
@@ -182,7 +184,7 @@ export function Hero() {
                 {/* Travel Icons Grid */}
                 <div className="grid grid-cols-2 gap-8 relative z-10">
                   {/* Plane */}
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50 opacity-80">
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
                       <svg
                         className="w-8 h-8 text-white"
@@ -207,7 +209,7 @@ export function Hero() {
                   </div>
 
                   {/* Hotel */}
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50 opacity-80">
                     <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-xl flex items-center justify-center mb-4">
                       <svg
                         className="w-8 h-8 text-white"
@@ -232,7 +234,7 @@ export function Hero() {
                   </div>
 
                   {/* Credit Card */}
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50 opacity-80">
                     <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-4">
                       <svg
                         className="w-8 h-8 text-white"
@@ -257,7 +259,7 @@ export function Hero() {
                   </div>
 
                   {/* QR Code */}
-                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50">
+                  <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100/50 opacity-80">
                     <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-4">
                       <svg
                         className="w-8 h-8 text-white"

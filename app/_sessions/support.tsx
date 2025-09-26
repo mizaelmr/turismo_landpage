@@ -4,7 +4,7 @@ export function Support() {
   return (
     <section className="py-20 bg-gray-50">
       <Container className="text-center">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-[#143678]">
           Suporte Sempre ao Seu Lado
         </h2>
         <p className="text-xl text-gray-600 mt-3 max-w-2xl mx-auto">
@@ -19,15 +19,15 @@ export function Support() {
               weight="fill"
               className="text-green-500 mb-4"
             /> */}
-            <h3 className="text-xl font-bold text-gray-900">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-[#143678]">
               Atendimento via WhatsApp
             </h3>
             <p className="text-gray-600 mt-2">
               Suporte rápido e prático direto no WhatsApp. Nossa equipe responde
               em tempo real.
             </p>
-            <a
-              href="#whatsapp"
+            <a target="_blank"
+              href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
               className="mt-6 px-5 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg shadow-md transition"
             >
               Falar no WhatsApp
@@ -40,7 +40,7 @@ export function Support() {
               weight="fill"
               className="text-blue-500 mb-4"
             /> */}
-            <h3 className="text-xl font-bold text-gray-900">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-[#143678]">
               Tutoriais em Vídeo Aula
             </h3>
             <p className="text-gray-600 mt-2">

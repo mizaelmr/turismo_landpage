@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
               Política de Privacidade
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Sua privacidade é nossa prioridade. Esta política explica como o <span className="font-bold text-purple-600">UPTUR</span> 
+              Sua privacidade é nossa prioridade. Esta política explica como o <span className="font-bold text-purple-600">UPTUR </span> 
               coleta, usa e protege suas informações pessoais com total transparência e segurança.
             </p>
           </div>

@@ -8,7 +8,7 @@ export function Mobility() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Texto */}
             <div className="lg:w-1/2">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 dark:text-[#143678]">
                 Mobilidade para sua Agência
               </h2>
               <p className="text-xl text-gray-600 mb-6">
@@ -32,18 +32,14 @@ export function Mobility() {
                 <li className="flex items-center gap-3">
                   <span className="text-gray-800 text-xl">🔄</span>
                   Sincronização automática entre dispositivos
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✅</span>
-                  Funcionalidades offline (quando aplicável)
-                </li>
+                </li>              
               </ul>
             </div>
 
             {/* Imagem */}
             <div className="lg:w-1/2 flex justify-center">
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png"
+              <img width="320" style={{opacity:0.8, borderRadius:"10px"}}
+                src="mobileOnibus.png"
                 alt="Aplicativo Mobile Turismo"
                 className="max-w-md"
               />

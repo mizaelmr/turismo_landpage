@@ -11,11 +11,11 @@ interface Metric {
 }
 
 const metrics: Metric[] = [
-  { label: "Agências ativas", value: 1200, color: "text-cyan-600" },
-  { label: "Reservas realizadas", value: 350000, color: "text-indigo-600" },
+  { label: "Agências ativas", value: 250, color: "text-cyan-600" },
+  { label: "Reservas realizadas", value: 50000, color: "text-indigo-600" },
   {
     label: "Tempo economizado",
-    value: 40,
+    value: 72,
     color: "text-emerald-600",
     isPercent: true,
   },
@@ -77,12 +77,12 @@ export function ResultsNumbers() {
     <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
       <Container>
         <div className="flex flex-col justify-center items-center md:items-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-[#143678]">
               Nossos resultados em números
             </h2>
             <p className="text-xl text-gray-600 mt-3 text-center max-w-xl">
               Mais que depoimentos: métricas reais que mostram o impacto da
-              automação na sua agência.
+              automação na sua agência de viagem.
             </p>
         </div>
 

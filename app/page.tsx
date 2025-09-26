@@ -18,7 +18,6 @@ export default function Home() {
     <main>
       <Hero />
       <Video />
-      <Understand />
       <ResultsNumbers />
       <Resources />
       <Feedback />
@@ -29,7 +28,7 @@ export default function Home() {
       <Security />
       <Questions />
       <a
-        href="https://wa.me/558788567300"
+        href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 z-[999]"

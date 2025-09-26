@@ -14,7 +14,7 @@ export function WhatsAppSession() {
         </p>
 
         <a
-          href="https://wa.me/558788567300"
+          href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
           target="_blank"
           className="inline-flex items-center gap-2 bg-white text-green-600 font-semibold px-6 py-3 rounded-full shadow-md hover:bg-gray-100 transition"
         >

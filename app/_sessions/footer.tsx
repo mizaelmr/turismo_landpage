@@ -128,7 +128,7 @@ export function Footer() {
 
               {/* WhatsApp */}
               <a
-                href="https://wa.me/558788567300"
+                href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full hover:bg-gray-500 transition-colors duration-200"

@@ -7,9 +7,13 @@ export function Plans() {
       name: "Básico",
       price: "R$ 99/mês",
       benefits: [
-        "Até 200 reservas/mês",
-        "Relatórios básicos",
+        "Sem limite de reservas",
+        "Controle de pacotes",
+        "Relatórios financeiros",
+        "Relatórios gerenciais",
         "Suporte por e-mail",
+        "Página de pacotes",
+        "Embarque por QRcode",
       ],
       popular: false,
     },
@@ -18,10 +22,15 @@ export function Plans() {
       name: "Completo",
       price: "R$ 199/mês",
       benefits: [
-        "Reservas ilimitadas",
-        "Relatórios avançados",
-        "Integração com sistemas de pagamento",
-        "Suporte por chat e e-mail",
+        "Sem limite de reservas",
+        "Tudo do plano básico",
+        "Suporte por chat e-mail",
+        "Página de pacotes",
+        "Embarque por QRcode",
+        "Importação de dados",
+        "Treinamento da UPTUR",
+        "API Rest de Integração",
+        "Notificação de WhatsApp",
       ],
       popular: true,
     },
@@ -30,10 +39,13 @@ export function Plans() {
       name: "Premium",
       price: "R$ 299/mês",
       benefits: [
-        "Tudo do plano Completo",
-        "Suporte 24/7 prioritário",
-        "Personalização da plataforma",
-        "Consultoria de automação",
+        "Sem limite de reservas",
+        "Tudo do plano completo",
+        "Suporte por chat e-mail",
+        "Treinamento da UPTUR",
+        "API Rest de Integração",
+        "Notificação por e-mail",
+        "Notificação de WhatsApp com seu número",
       ],
       popular: false,
     },
@@ -46,7 +58,7 @@ export function Plans() {
     >
       <Container>
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 dark:text-[#143678]">
             Escolha seu Plano
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
