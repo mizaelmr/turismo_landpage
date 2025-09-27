@@ -1,6 +1,14 @@
 import Container from "../_components/Container";
 
 export function Plans() {
+  // Função para remover acentos e converter para minúsculo
+  const normalizeText = (text: string) => {
+    return text
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '');
+  };
+
   const plans = [
     {
       id: 1,
@@ -115,7 +123,10 @@ export function Plans() {
               </div>
 
               <div className="text-center">
-                <button className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                <a 
+                  href={`https://turismo.tecvalle.com.br/register?plano=${encodeURIComponent(normalizeText(plan.name))}`}
+                  className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+                >
                   Assinar Agora
                   <svg
                     className="w-5 h-5 ml-2"
@@ -130,7 +141,7 @@ export function Plans() {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           ))}
