@@ -155,7 +155,7 @@
         },
         {
           "question": "Como funciona o período gratuito?",
-          "answer": "Você pode testar gratuitamente por 30 dias com acesso a todas as funcionalidades do plano Profissional."
+          "answer": "Você pode testar gratuitamente por 7 dias com acesso a todas as funcionalidades do plano Profissional."
         },
         {
           "question": "Preciso instalar algo para usar o UPTUR?",
@@ -214,9 +214,9 @@
         { "label": "Contato", "url": "/contato" }
       ],
       "social": [
-        { "platform": "instagram", "url": "https://instagram.com/UPTUR" },
+        { "platform": "instagram", "url": "https://www.instagram.com/uptur.br" },
         { "platform": "facebook", "url": "https://facebook.com/UPTUR" },
-        { "platform": "whatsapp", "url": "https://wa.me/5599999999999" }
+        { "platform": "whatsapp", "url": "https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR" }
       ],
       "copyright": "© 2025 UPTUR. Todos os direitos reservados."
     }
