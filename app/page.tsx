@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Video />
+      {/* <Video /> */}
       <ResultsNumbers />
       <Resources />
       <Feedback />
