@@ -49,7 +49,7 @@ export function Hero() {
                 </div>
               </a>
             </div>
-            {/* Login and Register para mobile */}
+            {/* Login and Register for mobile */}
             <div className="flex lg:hidden items-center space-x-6">
               <a
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
