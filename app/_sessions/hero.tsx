@@ -49,6 +49,21 @@ export function Hero() {
                 </div>
               </a>
             </div>
+            {/* Login and Register for mobile */}
+            <div className="flex lg:hidden items-center space-x-6">
+              <a
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+                href="https://turismo.tecvalle.com.br/login"
+              >
+                Login
+              </a>
+              <a
+                className="rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 px-6 py-2.5 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                href="https://turismo.tecvalle.com.br/register"
+              >
+                Começar
+              </a>
+            </div>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
