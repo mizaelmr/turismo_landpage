@@ -1,7 +1,7 @@
 'use client'
 
 import Container from "@/_components/Container";
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { Play, X, House } from "@phosphor-icons/react";
 
 const videos = [
@@ -94,61 +94,17 @@ function HeaderVideos() {
 }
 
 function VideoCard({ url, title, index, onPlay }: VideoCardProps) {
-  const [thumbnailUrl, setThumbnailUrl] = useState<string | null>(null);
-  const [imageError, setImageError] = useState(false);
-
-  const videoId = url.match(/v=([^&]+)/)?.[1] || '';
-  const baseUrl = url.match(/https:\/\/([^\/]+)/)?.[1] || '';
-
-  const possibleUrls = useMemo(() => {
-    if (!videoId || !baseUrl) return [];
-    return [
-      `https://${baseUrl}/thumbnails/${videoId}.jpg`,
-      `https://${baseUrl}/thumbnails/${videoId}.png`,
-      `https://cdn.pandavideo.com/video/${videoId}/thumbnail.jpg`,
-      `https://cdn.pandavideo.com/video/${videoId}/thumbnail.png`,
-    ];
-  }, [videoId, baseUrl]);
-
-  useEffect(() => {
-    if (possibleUrls.length > 0 && !thumbnailUrl) {
-      setThumbnailUrl(possibleUrls[0]);
-    }
-  }, [possibleUrls, thumbnailUrl]);
-
-  const handleImageError = () => {
-    const currentIndex = possibleUrls.indexOf(thumbnailUrl || '');
-    if (currentIndex < possibleUrls.length - 1) {
-      setThumbnailUrl(possibleUrls[currentIndex + 1]);
-    } else {
-      setImageError(true);
-    }
-  };
-
   return (
     <div className="bg-white rounded-lg overflow-hidden transition-all duration-300 cursor-pointer group">
       <div
         className="relative pb-[56.25%] h-0 overflow-hidden bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300"
         onClick={() => onPlay(url)}
       >
-        {thumbnailUrl && !imageError ? (
           <img
-            src={thumbnailUrl}
-            alt={`Thumbnail do Tutorial ${index + 1}`}
+            src="/imageBackgrond2.jpg"
+            alt={title}
             className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            onError={handleImageError}
-            loading="lazy"
           />
-        ) : (
-          <>
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px)`
-              }}></div>
-            </div>
-          </>
-        )}
-
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors"></div>
 
         <div className="absolute inset-0 flex items-center justify-center z-10">
