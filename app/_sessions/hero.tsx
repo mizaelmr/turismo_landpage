@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Container from "../_components/Container";
 import Mock from "../_mock/mock.json";
-import { Blocks } from "lucide-react";
 import Link from "next/link";
+import { Header } from "@/_components/Header";
 
 export function Hero() {
   return (
@@ -14,7 +13,6 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-600/5 to-indigo-600/5"></div>
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl -translate-y-48 translate-x-48"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl translate-y-48 -translate-x-48"></div>
-
       {/* Header */}
       <header className="h-20 bg-white/80 backdrop-blur-sm border-b border-gray-100/50 relative z-10">
         <Container className="h-full">
