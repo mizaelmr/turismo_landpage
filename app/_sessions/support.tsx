@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../_components/Container";
 
 export function Support() {
@@ -47,12 +48,12 @@ export function Support() {
               Acesse nossa biblioteca de vídeos explicativos e aprenda passo a
               passo.
             </p>
-            <a
-              href="#tutoriais"
+            <Link
+              href="/videos"
               className="mt-6 px-5 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-lg shadow-md transition"
             >
               Assistir Tutoriais
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

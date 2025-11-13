@@ -7,11 +7,8 @@ import { Resources } from "./_sessions/resources";
 import { Support } from "./_sessions/support";
 import { Security } from "./_sessions/security";
 import { ResultsNumbers } from "./_sessions/resultsNumbers";
-import { Understand } from "./_sessions/understand";
 import { Mobility } from "./_sessions/mobility";
-import { Video } from "./_sessions/video";
 import { WhatsAppSession } from "./_sessions/whatsAppSession";
-import { WhatsappLogo } from "@phosphor-icons/react";
 
 export default function Home() {
   return (

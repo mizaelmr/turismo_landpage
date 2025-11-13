@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "../_components/Container";
 import Mock from "../_mock/mock.json";
 import { Blocks } from "lucide-react";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -97,6 +98,12 @@ export function Hero() {
               >
                 FAQ
               </a>
+              <Link
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+                href="/videos"
+              >
+                Tutoriais
+              </Link>
             </nav>
 
             {/* Desktop CTA */}
