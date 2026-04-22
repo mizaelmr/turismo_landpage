@@ -14,7 +14,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.483.0",
-    "next": "15.2.3",
+    "next": "15.2.8",
     "react": "18",
     "react-dom": "18",
     "swiper": "^11.2.6",
