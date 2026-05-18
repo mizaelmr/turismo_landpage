@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Termos de Serviço",
+  description:
+    "Leia os termos e condições de uso da plataforma UPTUR. Direitos, responsabilidades e políticas de uso.",
+  openGraph: {
+    title: "Termos de Serviço | UPTUR",
+    description: "Conheça os termos e condições de uso do UPTUR.",
+    url: "https://turismo.tecvalle.com.br/terms-service",
+  },
+  alternates: {
+    canonical: "https://turismo.tecvalle.com.br/terms-service",
+  },
+};
 import { ArrowLeft, Shield, Users, FileText, Lock, AlertCircle, CheckCircle } from 'lucide-react';
 
 export default function TermsService() {

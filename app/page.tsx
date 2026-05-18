@@ -9,10 +9,32 @@ import { Security } from "./_sessions/security";
 import { ResultsNumbers } from "./_sessions/resultsNumbers";
 import { Mobility } from "./_sessions/mobility";
 import { WhatsAppSession } from "./_sessions/whatsAppSession";
+import Mock from "./_mock/mock.json";
+
+const faqQuestions =
+  (Mock.sessions[4] as { questions?: { question: string; answer: string }[] })
+    .questions ?? [];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqQuestions.map((q) => ({
+    "@type": "Question",
+    name: q.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: q.answer,
+    },
+  })),
+};
 
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Hero />
       {/* <Video /> */}
       <ResultsNumbers />

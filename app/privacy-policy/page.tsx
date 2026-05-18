@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: "Política de Privacidade",
+  description:
+    "Saiba como o UPTUR coleta, usa e protege suas informações pessoais com total transparência e segurança.",
+  openGraph: {
+    title: "Política de Privacidade | UPTUR",
+    description: "Conheça as práticas de privacidade e proteção de dados do UPTUR.",
+    url: "https://turismo.tecvalle.com.br/privacy-policy",
+  },
+  alternates: {
+    canonical: "https://turismo.tecvalle.com.br/privacy-policy",
+  },
+};
 import { ArrowLeft, Shield, Database, Eye, Users, FileText, Lock, Mail, CheckCircle, AlertTriangle } from 'lucide-react';
 
 export default function PrivacyPolicy() {
