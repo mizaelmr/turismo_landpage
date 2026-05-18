@@ -12,8 +12,12 @@ export function Plans() {
   const plans = [
     {
       id: 1,
-      name: "Básico",
-      price: "R$ 99/mês",
+      name: "Gratuito",
+      tagline: "Ideal para começar sem risco",
+      price: null,
+      priceLabel: "Grátis",
+      priceSub: "por 3 meses",
+      cta: "Começar Grátis",
       benefits: [
         "Sem limite de reservas",
         "Controle de pacotes",
@@ -27,35 +31,21 @@ export function Plans() {
     },
     {
       id: 2,
-      name: "Completo",
-      price: "R$ 199/mês",
+      name: "Profissional",
+      tagline: "Para agências que querem crescer",
+      price: "9,99",
+      priceLabel: null,
+      priceSub: "/mês",
+      cta: "Assinar Agora",
       benefits: [
-        "Sem limite de reservas",
-        "Tudo do plano básico",
-        "Suporte por chat e-mail",
-        "Página de pacotes",
-        "Embarque por QRcode",
+        "Tudo do plano Gratuito",
+        "Suporte por chat e e-mail",
+        "Notificações via WhatsApp",
         "Importação de dados",
-        "Treinamento da UPTUR",
-        "API Rest de Integração",
-        "Notificação de WhatsApp",
+        "Treinamento e onboarding",
+        "API de integração",
       ],
       popular: true,
-    },
-    {
-      id: 3,
-      name: "Premium",
-      price: "R$ 299/mês",
-      benefits: [
-        "Sem limite de reservas",
-        "Tudo do plano completo",
-        "Suporte por chat e-mail",
-        "Treinamento da UPTUR",
-        "API Rest de Integração",
-        "Notificação por e-mail",
-        "Notificação de WhatsApp com seu número",
-      ],
-      popular: false,
     },
   ];
 
@@ -70,11 +60,11 @@ export function Plans() {
             Escolha seu Plano
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comece sua jornada no turismo com nosso plano completo e acessível
+            3 meses grátis, sem cartão de crédito. Se quiser escalar, o plano profissional sai por menos de R$ 10 por mês — com tudo que sua agência precisa para operar.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.id}
@@ -89,17 +79,27 @@ export function Plans() {
               )}
 
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-gray-900 mb-1">
                   {plan.name}
                 </h3>
+                <p className="text-sm text-gray-500 mb-4">{plan.tagline}</p>
                 <div className="mb-6">
-                  <div className="flex items-baseline justify-center">
-                    <span className="text-4xl font-bold text-gray-900">R$</span>
-                    <span className="text-6xl font-bold text-blue-600 mx-2">
-                      {plan.price.replace("R$ ", "").replace("/mês", "")}
-                    </span>
-                    <span className="text-xl text-gray-600">/mês</span>
-                  </div>
+                  {plan.priceLabel ? (
+                    <div className="flex flex-col items-center justify-center">
+                      <span className="text-6xl font-bold text-blue-600">
+                        {plan.priceLabel}
+                      </span>
+                      <span className="text-xl text-gray-600 mt-1">{plan.priceSub}</span>
+                    </div>
+                  ) : (
+                    <div className="flex items-baseline justify-center">
+                      <span className="text-4xl font-bold text-gray-900">R$</span>
+                      <span className="text-6xl font-bold text-blue-600 mx-2">
+                        {plan.price}
+                      </span>
+                      <span className="text-xl text-gray-600">{plan.priceSub}</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -127,7 +127,7 @@ export function Plans() {
                   href={`https://turismo.tecvalle.com.br/register?plano=${encodeURIComponent(normalizeText(plan.name))}`}
                   className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                 >
-                  Assinar Agora
+                  {plan.cta}
                   <svg
                     className="w-5 h-5 ml-2"
                     fill="none"
