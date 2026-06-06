@@ -16,7 +16,7 @@ export function Plans() {
       tagline: "Ideal para começar sem risco",
       price: null,
       priceLabel: "Grátis",
-      priceSub: "por 3 meses",
+      priceSub: "por 1 mês",
       cta: "Começar Grátis",
       benefits: [
         "Sem limite de reservas",
@@ -33,9 +33,10 @@ export function Plans() {
       id: 2,
       name: "Profissional",
       tagline: "Para agências que querem crescer",
-      price: "9,99",
+      price: "9,90",
       priceLabel: null,
-      priceSub: "/mês",
+      priceSub: "no 1º mês",
+      fullPrice: "197,00",
       cta: "Assinar Agora",
       benefits: [
         "Tudo do plano Gratuito",
@@ -60,7 +61,7 @@ export function Plans() {
             Escolha seu Plano
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            3 meses grátis, sem cartão de crédito. Se quiser escalar, o plano profissional sai por menos de R$ 10 por mês — com tudo que sua agência precisa para operar.
+            1 mês grátis, sem cartão de crédito. Se quiser escalar, o plano profissional sai por R$ 9,90 no primeiro mês — depois R$ 197,00/mês com tudo que sua agência precisa.
           </p>
         </div>
 
@@ -92,12 +93,19 @@ export function Plans() {
                       <span className="text-xl text-gray-600 mt-1">{plan.priceSub}</span>
                     </div>
                   ) : (
-                    <div className="flex items-baseline justify-center">
-                      <span className="text-4xl font-bold text-gray-900">R$</span>
-                      <span className="text-6xl font-bold text-blue-600 mx-2">
-                        {plan.price}
-                      </span>
-                      <span className="text-xl text-gray-600">{plan.priceSub}</span>
+                    <div className="flex flex-col items-center justify-center">
+                      <div className="flex items-baseline justify-center">
+                        <span className="text-4xl font-bold text-gray-900">R$</span>
+                        <span className="text-6xl font-bold text-blue-600 mx-2">
+                          {plan.price}
+                        </span>
+                        <span className="text-xl text-gray-600">{plan.priceSub}</span>
+                      </div>
+                      {"fullPrice" in plan && plan.fullPrice && (
+                        <span className="text-sm text-gray-400 mt-1">
+                          depois R$ {plan.fullPrice}/mês
+                        </span>
+                      )}
                     </div>
                   )}
                 </div>
