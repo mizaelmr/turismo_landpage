@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "../_components/Container";
 
 export function Demo() {
@@ -12,11 +13,11 @@ export function Demo() {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-400/20 rounded-full blur-3xl translate-y-48 translate-x-48"></div>
 
       <Container>
-        <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto">
+        <div className="relative z-10 flex flex-col items-center text-center max-w-3xl mx-auto mb-12">
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/15 text-white text-sm font-medium mb-6 backdrop-blur-sm border border-white/20">
             <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-            Demo ao vivo
+            Sistema de verdade, sem enrolação
           </div>
 
           {/* Heading */}
@@ -25,11 +26,40 @@ export function Demo() {
             <span className="text-blue-200">funcionando de verdade</span>
           </h2>
 
-          <p className="text-xl text-blue-100 leading-relaxed mb-10">
-            Acesse nosso site de demonstração e explore todas as funcionalidades
-            que a UPTUR oferece para a sua agência de turismo.
+          <p className="text-xl text-blue-100 leading-relaxed">
+            Este é o site de uma agência que já usa o UPTUR — o mesmo que a
+            sua agência vai ter, com o seu domínio e a sua marca.
           </p>
+        </div>
 
+        <div className="relative z-10 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+          <div className="bg-white rounded-2xl p-3 shadow-2xl">
+            <Image
+              src="/screenshots/site-publicado.png"
+              alt="Site de vendas publicado automaticamente pelo UPTUR, com pacotes disponíveis para reserva"
+              width={1280}
+              height={719}
+              className="rounded-xl w-full h-auto"
+            />
+            <p className="text-gray-600 text-sm mt-3 px-2 pb-1">
+              Seu site de vendas, com pacotes prontos pra reserva
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-3 shadow-2xl">
+            <Image
+              src="/screenshots/mapa-assentos.png"
+              alt="Mapa de assentos interativo do UPTUR"
+              width={863}
+              height={596}
+              className="rounded-xl w-full h-auto"
+            />
+            <p className="text-gray-600 text-sm mt-3 px-2 pb-1">
+              Cliente escolhe a própria poltrona na reserva
+            </p>
+          </div>
+        </div>
+
+        <div className="relative z-10 flex flex-col items-center text-center">
           {/* CTA Button */}
           <a
             href="https://empresa1.up.tur.br/"

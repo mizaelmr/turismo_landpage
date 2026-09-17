@@ -17,7 +17,7 @@
         {
           "icon": "globe",
           "title": "Gestão de Pacotes Online",
-          "description": "Crie, edite e publique pacotes de viagem com facilidade, e tenha acesso a tudo de qualquer lugar, direto do celular ou computador."
+          "description": "Crie pacotes com transporte próprio, fretado ou só hospedagem — você escolhe, e publica tudo direto do celular ou computador."
         },
         {
           "icon": "calendar-check",
@@ -42,7 +42,7 @@
         {
           "icon": "credit-card",
           "title": "Painel Financeiro Integrado",
-          "description": "Controle pagamentos, métodos de cobrança, status de recebimento e obtenha uma visão completa das suas receitas e despesas."
+          "description": "Receba pagamentos direto pelo Mercado Pago, acompanhe status de recebimento e tenha uma visão completa das suas receitas e despesas."
         }
       ]
     },    
@@ -105,37 +105,36 @@
         {
           "name": "Gratuito",
           "price": "R$ 0",
-          "description": "Ideal para conhecer a plataforma",
+          "description": "Ideal para conhecer a plataforma, por 1 mês, sem cartão de crédito",
           "features": [
-            "Cadastro de até 3 pacotes",
-            "10 reservas por mês",
+            "Sem limite de reservas",
+            "Controle de pacotes",
             "Suporte por e-mail"
           ],
           "cta": "Começar Grátis"
         },
         {
           "name": "Profissional",
-          "price": "R$ 97/mês",
+          "price": "R$ 197/mês",
           "description": "Perfeito para agências em crescimento",
           "features": [
-            "Pacotes ilimitados",
-            "Reservas ilimitadas",
+            "Pacotes e reservas ilimitados",
             "Painel financeiro completo",
-            "Suporte via WhatsApp"
+            "Notificações via WhatsApp",
+            "Suporte por chat e e-mail"
           ],
           "cta": "Assinar Agora"
         },
         {
-          "name": "Master",
-          "price": "R$ 197/mês",
-          "description": "Para quem quer o máximo controle",
+          "name": "Pro+",
+          "price": "R$ 247/mês",
+          "description": "Para quem quer atender com o número da própria agência",
           "features": [
-            "Todos os recursos do plano Pro",
-            "Múltiplos usuários",
-            "Acesso a relatórios avançados",
-            "Consultoria personalizada"
+            "Tudo do plano Profissional",
+            "Número de WhatsApp da própria agência",
+            "Atendimento com identidade da sua marca"
           ],
-          "cta": "Quero esse"
+          "cta": "Assinar Agora"
         }
       ]
     },
@@ -155,7 +154,7 @@
         },
         {
           "question": "Como funciona o período gratuito?",
-          "answer": "Você tem 1 mês grátis para usar o sistema sem precisar de cartão de crédito. Após esse período, você pode assinar o plano Profissional por R$ 9,90 no primeiro mês — depois R$ 197,00/mês."
+          "answer": "Você tem 1 mês grátis para usar o sistema sem precisar de cartão de crédito. Após esse período, você pode assinar o plano Profissional por R$ 197,00/mês, ou o Pro+ (com WhatsApp próprio da agência) por R$ 247,00/mês."
         },
         {
           "question": "Preciso instalar algo para usar o UPTUR?",
@@ -166,8 +165,8 @@
           "answer": "Não há limites! Em todos os planos você pode cadastrar quantos pacotes desejar, com datas, preços, descrição, imagens e muito mais."
         },
         {
-          "question": "É possível emitir boletos para os clientes?",
-          "answer": "Sim. A plataforma possui integração com sistemas de cobrança para gerar boletos automaticamente, além de enviar lembretes de pagamento."
+          "question": "Como funciona o pagamento dos meus clientes?",
+          "answer": "A plataforma é integrada com o Mercado Pago, então seus clientes podem pagar as reservas direto pelo sistema, com acompanhamento automático do status de recebimento."
         },
         {
           "question": "Meu cliente consegue escolher a poltrona na hora da reserva?",
@@ -216,7 +215,7 @@
       "social": [
         { "platform": "instagram", "url": "https://www.instagram.com/uptur.br" },
         { "platform": "facebook", "url": "https://facebook.com/UPTUR" },
-        { "platform": "whatsapp", "url": "https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR" }
+        { "platform": "whatsapp", "url": "https://api.whatsapp.com/send?1=pt_BR&phone=5587988567300&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR" }
       ],
       "copyright": "© 2025 UPTUR. Todos os direitos reservados."
     }

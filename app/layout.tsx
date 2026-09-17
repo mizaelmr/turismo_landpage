@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | UPTUR",
   },
   description:
-    "Sistema completo de gestão de viagens para agências. Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 3 meses!",
+    "Sistema completo de gestão de viagens para agências. Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 1 mês!",
   keywords: [
     "sistema gestão agência turismo",
     "software para agência de turismo",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "UPTUR",
     title: "UPTUR - Sistema de Gestão para Agências de Turismo",
     description:
-      "Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 3 meses!",
+      "Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 1 mês!",
     images: [
       {
         url: "/og-image.png",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "UPTUR - Sistema de Gestão para Agências de Turismo",
     description:
-      "Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 3 meses!",
+      "Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 1 mês!",
     images: ["/og-image.png"],
   },
   alternates: {
@@ -92,22 +92,23 @@ const schemaOrg = {
       name: "Plano Gratuito",
       price: "0",
       priceCurrency: "BRL",
-      description: "Grátis por 3 meses",
+      description: "Grátis por 1 mês",
     },
     {
       "@type": "Offer",
       name: "Plano Profissional",
-      price: "9.99",
+      price: "197",
+      priceCurrency: "BRL",
+      billingIncrement: "1",
+    },
+    {
+      "@type": "Offer",
+      name: "Plano Profissional + WhatsApp Próprio",
+      price: "247",
       priceCurrency: "BRL",
       billingIncrement: "1",
     },
   ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    ratingCount: "250",
-    bestRating: "5",
-  },
 };
 
 export default function RootLayout({

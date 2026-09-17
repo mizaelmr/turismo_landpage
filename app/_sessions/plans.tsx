@@ -1,17 +1,10 @@
 import Container from "../_components/Container";
 
 export function Plans() {
-  // Função para remover acentos e converter para minúsculo
-  const normalizeText = (text: string) => {
-    return text
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '');
-  };
-
   const plans = [
     {
       id: 1,
+      slug: "gratuito",
       name: "Gratuito",
       tagline: "Ideal para começar sem risco",
       price: null,
@@ -31,12 +24,12 @@ export function Plans() {
     },
     {
       id: 2,
+      slug: "profissional",
       name: "Profissional",
       tagline: "Para agências que querem crescer",
-      price: "9,90",
+      price: "197",
       priceLabel: null,
-      priceSub: "no 1º mês",
-      fullPrice: "197,00",
+      priceSub: "/mês",
       cta: "Assinar Agora",
       benefits: [
         "Tudo do plano Gratuito",
@@ -47,6 +40,22 @@ export function Plans() {
         "API de integração",
       ],
       popular: true,
+    },
+    {
+      id: 3,
+      slug: "pro",
+      name: "Pro+",
+      tagline: "Para agências que querem o máximo",
+      price: "247",
+      priceLabel: null,
+      priceSub: "/mês",
+      cta: "Assinar Agora",
+      benefits: [
+        "Todas as funcionalidades do Profissional",
+        "WhatsApp com número próprio da agência",
+        "Mensagens enviadas pelo seu contato",
+      ],
+      popular: false,
     },
   ];
 
@@ -61,11 +70,11 @@ export function Plans() {
             Escolha seu Plano
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            1 mês grátis, sem cartão de crédito. Se quiser escalar, o plano profissional sai por R$ 9,90 no primeiro mês — depois R$ 197,00/mês com tudo que sua agência precisa.
+            1 mês grátis, sem cartão de crédito. Depois, escolha o Profissional por R$ 197/mês ou o Pro+ (com WhatsApp próprio da agência) por R$ 247/mês.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.id}
@@ -101,11 +110,6 @@ export function Plans() {
                         </span>
                         <span className="text-xl text-gray-600">{plan.priceSub}</span>
                       </div>
-                      {"fullPrice" in plan && plan.fullPrice && (
-                        <span className="text-sm text-gray-400 mt-1">
-                          depois R$ {plan.fullPrice}/mês
-                        </span>
-                      )}
                     </div>
                   )}
                 </div>
@@ -132,7 +136,7 @@ export function Plans() {
 
               <div className="text-center">
                 <a 
-                  href={`https://turismo.tecvalle.com.br/register?plano=${encodeURIComponent(normalizeText(plan.name))}`}
+                  href={`https://app.up.tur.br/register?plano=${plan.slug}`}
                   className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
                 >
                   {plan.cta}

@@ -1,4 +1,3 @@
-import { Feedback } from "./_sessions/feedback";
 import { Footer } from "./_sessions/footer";
 import { Hero } from "./_sessions/hero";
 import { Plans } from "./_sessions/plans";
@@ -7,9 +6,13 @@ import { Resources } from "./_sessions/resources";
 import { Demo } from "./_sessions/demo";
 import { Support } from "./_sessions/support";
 import { Security } from "./_sessions/security";
-import { ResultsNumbers } from "./_sessions/resultsNumbers";
 import { Mobility } from "./_sessions/mobility";
 import { WhatsAppSession } from "./_sessions/whatsAppSession";
+import { Problema } from "./_sessions/problema";
+import { ComoFunciona } from "./_sessions/comoFunciona";
+import { ParaQuemE } from "./_sessions/paraQuemE";
+import { CtaFinal } from "./_sessions/ctaFinal";
+import { PaymentBadges } from "./_sessions/paymentBadges";
 import Mock from "./_mock/mock.json";
 
 const faqQuestions =
@@ -38,18 +41,21 @@ export default function Home() {
       />
       <Hero />
       {/* <Video /> */}
-      <ResultsNumbers />
-      <Resources />
+      <Problema />
+      <ComoFunciona />
       <Demo />
-      <Feedback />
+      <Resources />
+      <ParaQuemE />
       <Plans />
+      <PaymentBadges />
       <WhatsAppSession />
       <Support />
       <Mobility />
       <Security />
       <Questions />
+      <CtaFinal />
       <a
-        href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
+        href="https://api.whatsapp.com/send?1=pt_BR&phone=5587988567300&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 z-[999]"
