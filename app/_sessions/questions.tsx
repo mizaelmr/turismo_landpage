@@ -65,7 +65,7 @@ export function Questions() {
                         </p>
                         <a 
                             className="inline-flex items-center rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 transition-colors duration-300" 
-                            href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR" target="_blank"
+                            href="https://api.whatsapp.com/send?1=pt_BR&phone=5587988567300&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR" target="_blank"
                         >
                             Central de Ajuda
                         </a>

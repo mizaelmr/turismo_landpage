@@ -28,7 +28,7 @@ export function Support() {
               em tempo real.
             </p>
             <a target="_blank"
-              href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
+              href="https://api.whatsapp.com/send?1=pt_BR&phone=5587988567300&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
               className="mt-6 px-5 py-3 bg-green-500 hover:bg-green-600 text-white font-bold rounded-lg shadow-md transition"
             >
               Falar no WhatsApp

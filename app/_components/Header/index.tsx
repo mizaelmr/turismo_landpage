@@ -40,13 +40,13 @@ export const Header = () => {
             <div className="flex lg:hidden items-center space-x-6">
               <a
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
-                href="https://turismo.tecvalle.com.br/login"
+                href="https://app.up.tur.br/login"
               >
                 Login
               </a>
               <a
                 className="rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 px-6 py-2.5 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                href="https://turismo.tecvalle.com.br/register"
+                href="https://app.up.tur.br/register"
               >
                 Começar
               </a>
@@ -65,12 +65,6 @@ export const Header = () => {
                 href="#recursos"
               >
                 Recursos
-              </a>
-              <a
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
-                href="#depoimentos"
-              >
-                Depoimentos
               </a>
               <a
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
@@ -96,13 +90,13 @@ export const Header = () => {
             <div className="hidden lg:flex items-center space-x-6">
               <a
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
-                href="https://turismo.tecvalle.com.br/login"
+                href="https://app.up.tur.br/login"
               >
                 Login
               </a>
               <a
                 className="rounded-lg text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 px-6 py-2.5 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                href="https://turismo.tecvalle.com.br/register"
+                href="https://app.up.tur.br/register"
               >
                 Começar
               </a>

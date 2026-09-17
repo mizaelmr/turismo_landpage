@@ -1,6 +1,3 @@
-import steps from "/public/steps.svg";
-import phone from "/public/phone-resources.webp";
-import Image from "next/image";
 import Container from "../_components/Container";
 import Mock from "../_mock/mock.json";
 

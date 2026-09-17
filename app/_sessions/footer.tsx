@@ -1,13 +1,7 @@
 import Image from "next/image";
-import logo from "/public/logo_pilot.png";
 import instagram from "/public/instagram-logo.svg";
 import whatsapp from "/public/whatsapp-logo.png";
-import facebook from "/public/facebook-logo.svg";
-import linkedin from "/public/linkedin-logo.svg";
-import xLogo from "/public/x-logo.svg";
 import Container from "../_components/Container";
-import Mock from "../_mock/mock.json";
-import { WhatsAppSession } from "./whatsAppSession";
 
 export function Footer() {
   return (
@@ -66,14 +60,6 @@ export function Footer() {
             <div className="px-4 py-2">
               <a
                 className="text-gray-300 hover:text-white transition-colors duration-200"
-                href="#depoimentos"
-              >
-                Depoimentos
-              </a>
-            </div>
-            <div className="px-4 py-2">
-              <a
-                className="text-gray-300 hover:text-white transition-colors duration-200"
                 href="#planos"
               >
                 Planos
@@ -93,7 +79,7 @@ export function Footer() {
           <div className="flex justify-center lg:justify-end">
             <a
               className="inline-flex items-center rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 transition-colors duration-300"
-              href="https://turismo.tecvalle.com.br/register"
+              href="https://app.up.tur.br/register"
             >
               Começar agora
             </a>
@@ -104,7 +90,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between pt-8 border-t border-gray-800">
           {/* Copyright */}
           <p className="text-center lg:text-left text-sm text-gray-400 mb-6 lg:mb-0">
-            ©2025 up.tur.br
+            ©2025 up.tur.br — CNPJ 22.909.017/0001-07
           </p>
 
           {/* Social Links */}
@@ -128,7 +114,7 @@ export function Footer() {
 
               {/* WhatsApp */}
               <a
-                href="https://api.whatsapp.com/send?1=pt_BR&phone=554497013460&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
+                href="https://api.whatsapp.com/send?1=pt_BR&phone=5587988567300&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20UPTUR"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full hover:bg-gray-500 transition-colors duration-200"
