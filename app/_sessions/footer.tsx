@@ -1,6 +1,6 @@
 import Image from "next/image";
-import instagram from "/public/instagram-logo.svg";
-import whatsapp from "/public/whatsapp-logo.png";
+import instagram from "../../public/instagram-logo.svg";
+import whatsapp from "../../public/whatsapp-logo.png";
 import Container from "../_components/Container";
 
 export function Footer() {
