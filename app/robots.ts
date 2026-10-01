@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://turismo.tecvalle.com.br";
+const siteUrl = "https://www.up.tur.br";
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -3,12 +3,13 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**.pandavideo.com.br",
-      },
-    ],
+  },
+  // Páginas da landing antiga que saíram do ar: manda quem chegar por link antigo para a home.
+  async redirects() {
+    return [
+      { source: "/videos", destination: "/", permanent: true },
+      { source: "/desenvolvimento", destination: "/", permanent: true },
+    ];
   },
   async headers() {
     return [

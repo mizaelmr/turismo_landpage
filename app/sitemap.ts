@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
+import { paginas } from "@/_content/paginas";
 
-const siteUrl = "https://turismo.tecvalle.com.br";
+const siteUrl = "https://www.up.tur.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -10,23 +11,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-    {
-      url: `${siteUrl}/videos`,
+    ...paginas.map((p) => ({
+      url: `${siteUrl}/${p.slug}`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    })),
     {
       url: `${siteUrl}/privacy-policy`,
       lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
     {
       url: `${siteUrl}/terms-service`,
       lastModified: new Date(),
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
   ];
 }

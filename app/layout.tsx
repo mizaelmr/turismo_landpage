@@ -1,36 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@/components/Analytics";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const siteUrl = "https://www.up.tur.br";
 
-const siteUrl = "https://turismo.tecvalle.com.br";
+const title = "Sistema para Excursões e Agências de Turismo | UPTUR";
+const description =
+  "Venda excursões online 24h com mapa de poltronas, pagamento por Pix e embarque por QR Code. Sistema para agências de turismo rodoviário. Teste grátis por 1 mês.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "UPTUR - Sistema de Gestão para Agências de Turismo",
+    default: title,
     template: "%s | UPTUR",
   },
-  description:
-    "Sistema completo de gestão de viagens para agências. Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 1 mês!",
-  keywords: [
-    "sistema gestão agência turismo",
-    "software para agência de turismo",
-    "gestão de reservas viagem",
-    "controle de pacotes turísticos",
-    "sistema de embarque QRcode",
-    "relatórios financeiros turismo",
-    "UPTUR",
-  ],
+  description,
   authors: [{ name: "UPTUR" }],
   creator: "UPTUR",
   robots: {
@@ -46,67 +37,85 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: siteUrl,
+    url: "/",
     siteName: "UPTUR",
-    title: "UPTUR - Sistema de Gestão para Agências de Turismo",
-    description:
-      "Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 1 mês!",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "UPTUR - Sistema de Gestão para Agências de Turismo",
-      },
-    ],
+    title,
+    description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "UPTUR - Sistema de Gestão para Agências de Turismo",
-    description:
-      "Gerencie pacotes, reservas e vendas em um único sistema. Experimente grátis por 1 mês!",
-    images: ["/og-image.png"],
+    title,
+    description,
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: "/",
   },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+  // Código da meta tag do Google Search Console (só o valor de content="...").
+  // Sem a variável definida, a tag não é gerada.
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
   },
 };
 
 const schemaOrg = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "UPTUR",
-  url: siteUrl,
-  description:
-    "Sistema completo de gestão de viagens para agências de turismo. Gerencie pacotes, reservas, embarque por QRcode e relatórios financeiros.",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  offers: [
+  "@graph": [
     {
-      "@type": "Offer",
-      name: "Plano Gratuito",
-      price: "0",
-      priceCurrency: "BRL",
-      description: "Grátis por 1 mês",
+      "@type": "Organization",
+      "@id": `${siteUrl}/#organization`,
+      name: "UPTUR",
+      url: siteUrl,
+      logo: `${siteUrl}/brand/assinatura-dark.png`,
+      sameAs: ["https://www.instagram.com/uptur.br"],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+55-87-98856-7300",
+        contactType: "sales",
+        areaServed: "BR",
+        availableLanguage: "Portuguese",
+      },
     },
     {
-      "@type": "Offer",
-      name: "Plano Profissional",
-      price: "197",
-      priceCurrency: "BRL",
-      billingIncrement: "1",
-    },
-    {
-      "@type": "Offer",
-      name: "Plano Profissional + WhatsApp Próprio",
-      price: "247",
-      priceCurrency: "BRL",
-      billingIncrement: "1",
+      "@type": "SoftwareApplication",
+      name: "UPTUR",
+      url: siteUrl,
+      description,
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Web",
+      publisher: { "@id": `${siteUrl}/#organization` },
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Teste grátis",
+          price: "0",
+          priceCurrency: "BRL",
+          description: "1 mês grátis, sem cartão de crédito",
+        },
+        {
+          "@type": "Offer",
+          name: "Plano Profissional",
+          price: "197.00",
+          priceCurrency: "BRL",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "197.00",
+            priceCurrency: "BRL",
+            unitCode: "MON",
+          },
+        },
+        {
+          "@type": "Offer",
+          name: "Plano Pro+ (WhatsApp próprio da agência)",
+          price: "247.00",
+          priceCurrency: "BRL",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: "247.00",
+            priceCurrency: "BRL",
+            unitCode: "MON",
+          },
+        },
+      ],
     },
   ],
 };
@@ -125,9 +134,10 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );

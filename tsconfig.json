@@ -28,15 +28,6 @@
       ],
       "@/components/*": [
         "./app/_components/*"
-      ],
-      "@/sessions/*": [
-        "./app/_sessions/*"
-      ],
-      "@/lib/*": [
-        "./app/_lib/*"
-      ],
-      "@/mock/*": [
-        "./app/_mock/*"
       ]
     }
   },
