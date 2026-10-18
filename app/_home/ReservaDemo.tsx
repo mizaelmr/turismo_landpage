@@ -1,33 +1,36 @@
 "use client";
 
 import { useState } from "react";
+import { dict, type Locale } from "@/_content/i18n";
 
 // Demonstração ilustrativa da tela de reserva: o visitante clica numa poltrona livre e o resumo muda.
 const FILEIRAS = 10;
 const OCUPADAS = new Set([1, 2, 3, 5, 6, 8, 9, 10, 12, 15, 16, 17, 19, 20, 23, 24, 25, 27, 28, 31, 32, 35, 36, 39]);
-const PRECO = 289;
 
-function lado(numero: number) {
+function janela(numero: number) {
   const pos = (numero - 1) % 4;
-  return pos === 0 || pos === 3 ? "Janela" : "Corredor";
+  return pos === 0 || pos === 3;
 }
 
 function Poltrona({
   numero,
   selecionada,
   onSelect,
+  locale,
 }: {
   numero: number;
   selecionada: boolean;
   onSelect: (n: number) => void;
+  locale: Locale;
 }) {
+  const t = dict[locale].demo;
   const ocupada = OCUPADAS.has(numero);
   const base =
     "flex h-7 w-7 items-center justify-center rounded-md text-[10px] font-medium tabular-nums transition-all sm:h-8 sm:w-8 sm:text-[11px]";
 
   if (ocupada) {
     return (
-      <span className={`${base} bg-line text-mute/60`} aria-label={`Poltrona ${numero} ocupada`}>
+      <span className={`${base} bg-line text-mute/60`} aria-label={t.seatTaken(numero)}>
         {numero}
       </span>
     );
@@ -38,7 +41,7 @@ function Poltrona({
       type="button"
       onClick={() => onSelect(numero)}
       aria-pressed={selecionada}
-      aria-label={`Poltrona ${numero} livre`}
+      aria-label={t.seatFree(numero)}
       className={
         selecionada
           ? `${base} bg-petrol text-white ring-2 ring-petrol ring-offset-2`
@@ -50,7 +53,8 @@ function Poltrona({
   );
 }
 
-export function ReservaDemo() {
+export function ReservaDemo({ locale = "pt" }: { locale?: Locale }) {
+  const t = dict[locale].demo;
   const [poltrona, setPoltrona] = useState(14);
   const livres = FILEIRAS * 4 - OCUPADAS.size;
 
@@ -62,7 +66,7 @@ export function ReservaDemo() {
         <span className="h-2.5 w-2.5 rounded-full bg-line" />
         <span className="h-2.5 w-2.5 rounded-full bg-line" />
         <span className="ml-3 truncate rounded-md bg-white px-3 py-1 text-[11px] text-mute ring-1 ring-line">
-          suaagencia.up.tur.br/reserva
+          {t.url}
         </span>
       </div>
 
@@ -71,19 +75,19 @@ export function ReservaDemo() {
         <div className="mx-auto">
           <div className="rounded-[28px] border border-line px-3 pb-4 pt-3 sm:px-4">
             <div className="mb-3 flex items-center justify-between px-1 text-[10px] uppercase tracking-[0.16em] text-mute">
-              <span>Frente</span>
-              <span>{livres} livres</span>
+              <span>{t.front}</span>
+              <span>{livres} {t.free}</span>
             </div>
             <div className="space-y-1.5">
               {Array.from({ length: FILEIRAS }, (_, f) => {
                 const b = f * 4;
                 return (
                   <div key={f} className="flex items-center gap-1.5">
-                    <Poltrona numero={b + 1} selecionada={poltrona === b + 1} onSelect={setPoltrona} />
-                    <Poltrona numero={b + 2} selecionada={poltrona === b + 2} onSelect={setPoltrona} />
+                    <Poltrona numero={b + 1} selecionada={poltrona === b + 1} onSelect={setPoltrona} locale={locale} />
+                    <Poltrona numero={b + 2} selecionada={poltrona === b + 2} onSelect={setPoltrona} locale={locale} />
                     <span className="w-4 sm:w-5" />
-                    <Poltrona numero={b + 3} selecionada={poltrona === b + 3} onSelect={setPoltrona} />
-                    <Poltrona numero={b + 4} selecionada={poltrona === b + 4} onSelect={setPoltrona} />
+                    <Poltrona numero={b + 3} selecionada={poltrona === b + 3} onSelect={setPoltrona} locale={locale} />
+                    <Poltrona numero={b + 4} selecionada={poltrona === b + 4} onSelect={setPoltrona} locale={locale} />
                   </div>
                 );
               })}
@@ -93,24 +97,24 @@ export function ReservaDemo() {
 
         {/* resumo da reserva */}
         <div className="flex flex-col">
-          <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-mute">Excursão</p>
-          <h3 className="mt-1 text-lg font-semibold leading-snug">Porto Seguro · 5 dias</h3>
-          <p className="text-sm text-mute">12 a 16 de novembro</p>
+          <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-mute">{t.trip}</p>
+          <h3 className="mt-1 text-lg font-semibold leading-snug">{t.tripName}</h3>
+          <p className="text-sm text-mute">{t.tripDates}</p>
 
           <dl className="mt-5 space-y-3 border-y border-line py-4 text-sm">
             <div className="flex justify-between gap-4">
-              <dt className="text-mute">Poltrona</dt>
+              <dt className="text-mute">{t.seat}</dt>
               <dd className="font-medium tabular-nums">
-                {poltrona} · {lado(poltrona)}
+                {poltrona} · {janela(poltrona) ? t.window : t.aisle}
               </dd>
             </div>
             <div className="flex justify-between gap-4">
-              <dt className="text-mute">Embarque</dt>
-              <dd className="font-medium">Salvador · 06h00</dd>
+              <dt className="text-mute">{t.boarding}</dt>
+              <dd className="font-medium">{t.boardingValue}</dd>
             </div>
             <div className="flex justify-between gap-4">
-              <dt className="text-mute">Total</dt>
-              <dd className="font-semibold tabular-nums">R$ {PRECO},00</dd>
+              <dt className="text-mute">{t.total}</dt>
+              <dd className="font-semibold tabular-nums">{t.totalValue}</dd>
             </div>
           </dl>
 
@@ -120,9 +124,9 @@ export function ReservaDemo() {
                 <path d="M12 2.5 21.5 12 12 21.5 2.5 12z" opacity=".35" />
                 <path d="m12 6.5 5.5 5.5-5.5 5.5L6.5 12z" />
               </svg>
-              Pagar com Pix
+              {t.pay}
             </span>
-            <p className="mt-3 text-center text-[11px] text-mute">Clique numa poltrona livre para testar</p>
+            <p className="mt-3 text-center text-[11px] text-mute">{t.tryIt}</p>
           </div>
         </div>
       </div>

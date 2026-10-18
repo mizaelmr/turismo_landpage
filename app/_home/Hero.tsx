@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { REGISTER_URL, WHATSAPP_URL } from "@/_content/home";
+import { dict, registerUrl, whatsappUrl, type Locale } from "@/_content/i18n";
 import { ReservaDemo } from "./ReservaDemo";
 
 function Check() {
@@ -10,7 +10,8 @@ function Check() {
   );
 }
 
-export function Hero() {
+export function Hero({ locale = "pt" }: { locale?: Locale }) {
+  const t = dict[locale].hero;
   return (
     <section id="inicio" className="relative isolate overflow-hidden bg-paper text-ink">
       {/* Foto: Unsplash (licença gratuita) — estrada costeira entre morros verdes */}
@@ -30,62 +31,61 @@ export function Hero() {
         <div className="animate-fade-up">
           <p className="inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1 text-xs font-medium text-graphite shadow-sm">
             <span className="h-1.5 w-1.5 rounded-full bg-moss" />
-            Para excursionistas e agências de turismo rodoviário
+            {t.badge}
           </p>
 
           <h1 className="mt-7 text-[40px] font-semibold leading-[1.05] tracking-[-0.035em] sm:text-5xl lg:text-[64px]">
-            Sistema para excursões:{" "}
-            <span className="text-moss">venda 24h com mapa de poltronas e embarque por QR Code</span>
+            {t.titleStart}{" "}
+            <span className="text-moss">{t.titleHighlight}</span>
           </h1>
 
           <p className="mt-7 max-w-xl text-lg leading-relaxed text-graphite/80">
-            Seu destino, nosso comando. O cliente escolhe a poltrona, paga por Pix e recebe o cartão de embarque.
-            Você acompanha tudo num painel só, sem planilha e sem caderno.
+            {t.subtitle}
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <a
-              href={REGISTER_URL}
+              href={registerUrl[locale]}
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgb(0_0_0/0.5)] transition-colors hover:bg-graphite"
             >
-              Testar grátis por 1 mês
+              {t.cta}
               <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">→</span>
             </a>
             <a
-              href={WHATSAPP_URL}
+              href={whatsappUrl[locale]}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-full border border-line bg-white px-7 py-4 text-sm font-semibold text-ink transition-colors hover:border-ink"
             >
-              Falar com um especialista
+              {t.talk}
             </a>
           </div>
 
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-mute">
-            <li className="flex items-center gap-2"><Check />Sem cartão de crédito</li>
-            <li className="flex items-center gap-2"><Check />Sem fidelidade</li>
-            <li className="flex items-center gap-2"><Check />Começa com CPF</li>
+            {t.bullets.map((b) => (
+              <li key={b} className="flex items-center gap-2"><Check />{b}</li>
+            ))}
           </ul>
         </div>
 
         <div className="relative animate-fade-up [animation-delay:150ms]">
-          <ReservaDemo />
+          <ReservaDemo locale={locale} />
 
           {/* pagamento aprovado */}
           <div className="animate-float absolute -top-14 right-8 hidden w-60 rounded-2xl bg-ink p-4 text-white shadow-[0_30px_60px_-20px_rgb(0_0_0/0.5)] xl:block">
             <div className="flex items-center justify-between text-[11px] text-white/50">
-              <span>Nova reserva</span>
-              <span>agora</span>
+              <span>{t.cardNewBooking}</span>
+              <span>{t.cardNow}</span>
             </div>
-            <p className="mt-2 text-sm font-medium">Pagamento aprovado via Pix</p>
-            <p className="mt-1 text-2xl font-semibold tabular-nums tracking-tight">R$ 578,00</p>
-            <p className="mt-1 text-[11px] text-white/50">2 passageiros · poltronas 21 e 22</p>
+            <p className="mt-2 text-sm font-medium">{t.cardApproved}</p>
+            <p className="mt-1 text-2xl font-semibold tabular-nums tracking-tight">{t.cardAmount}</p>
+            <p className="mt-1 text-[11px] text-white/50">{t.cardPassengers}</p>
           </div>
 
           {/* embarque em tempo real */}
           <div className="animate-float absolute -bottom-32 -left-8 hidden w-64 rounded-2xl bg-ink p-4 text-white shadow-[0_30px_60px_-20px_rgb(0_0_0/0.5)] [animation-delay:-3s] lg:block">
             <div className="flex items-center justify-between">
-              <p className="text-sm font-medium">Embarque · Salvador</p>
+              <p className="text-sm font-medium">{t.boardingTitle}</p>
               <span className="text-[11px] tabular-nums text-white/50">38/42</span>
             </div>
             <div className="mt-3 h-1 overflow-hidden rounded-full bg-white/10">
@@ -94,7 +94,7 @@ export function Hero() {
             <ul className="mt-3 space-y-2 text-xs">
               <li className="flex justify-between text-white/80"><span>✓ Maria S. · 14</span><span className="tabular-nums text-white/40">06:42</span></li>
               <li className="flex justify-between text-white/80"><span>✓ João P. · 15</span><span className="tabular-nums text-white/40">06:44</span></li>
-              <li className="flex justify-between text-white/40"><span>○ Ana C. · 30</span><span>aguardando</span></li>
+              <li className="flex justify-between text-white/40"><span>○ Ana C. · 30</span><span>{t.waiting}</span></li>
             </ul>
           </div>
         </div>

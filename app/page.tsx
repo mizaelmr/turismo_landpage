@@ -1,49 +1,14 @@
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
-import { faq } from "@/_content/home";
-import { Hero } from "./_home/Hero";
-import { Recursos } from "./_home/Recursos";
-import {
-  ComoFunciona,
-  CtaFinal,
-  Duvidas,
-  Guias,
-  Pagamentos,
-  ParaQuem,
-  Planos,
-  Problema,
-  WhatsAppFlutuante,
-} from "./_home/Secoes";
+import type { Metadata } from "next";
+import { HomePage } from "./_home/HomePage";
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faq.map((f) => ({
-    "@type": "Question",
-    name: f.pergunta,
-    acceptedAnswer: { "@type": "Answer", text: f.resposta },
-  })),
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+    // Versões da landing em outros idiomas (para agências de fora do Brasil)
+    languages: { "pt-BR": "/", es: "/es", en: "/en", "x-default": "/en" },
+  },
 };
 
 export default function Home() {
-  return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <SiteHeader />
-      <main>
-        <Hero />
-        <Pagamentos />
-        <Problema />
-        <Recursos />
-        <ComoFunciona />
-        <ParaQuem />
-        <Planos />
-        <Guias />
-        <Duvidas />
-        <CtaFinal />
-      </main>
-      <SiteFooter />
-      <WhatsAppFlutuante />
-    </>
-  );
+  return <HomePage locale="pt" />;
 }
