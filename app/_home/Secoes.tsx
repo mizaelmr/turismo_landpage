@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Monograma } from "@/components/Brand";
 import { paginas } from "@/_content/paginas";
-import { faq, planos, REGISTER_URL, WHATSAPP_URL } from "@/_content/home";
+import { dict, registerUrl, whatsappUrl, type Locale } from "@/_content/i18n";
+
+type P = { locale?: Locale };
 
 function Eyebrow({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
   return (
@@ -18,45 +20,45 @@ function Check({ className = "text-ink" }: { className?: string }) {
   );
 }
 
-export function Pagamentos() {
+export function Pagamentos({ locale = "pt" }: P) {
+  const t = dict[locale].payments;
   return (
-    <section aria-label="Pagamentos integrados" className="border-b border-line bg-white">
+    <section aria-label={t.aria} className="border-b border-line bg-white">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 py-8 sm:px-6 md:flex-row lg:px-8">
-        <p className="text-sm text-mute">Seus clientes pagam online, com confirmação automática:</p>
+        <p className="text-sm text-mute">{t.text}</p>
         <div className="flex items-center gap-10 opacity-70 grayscale">
-          <Image src="/payment-logos/pix.svg" alt="Pix" width={80} height={28} className="h-6 w-auto" />
-          <Image src="/payment-logos/mercadopago.svg" alt="Mercado Pago" width={120} height={28} className="h-7 w-auto" />
-          <span className="text-sm font-semibold tracking-tight text-graphite">Cartão de crédito</span>
+          {t.showBrazilLogos && (
+            <>
+              <Image src="/payment-logos/pix.svg" alt="Pix" width={80} height={28} className="h-6 w-auto" />
+              <Image src="/payment-logos/mercadopago.svg" alt="Mercado Pago" width={120} height={28} className="h-7 w-auto" />
+            </>
+          )}
+          <span className="text-sm font-semibold tracking-tight text-graphite">{t.card}</span>
         </div>
       </div>
     </section>
   );
 }
 
-export function Problema() {
-  const linhas = [
-    ["Poltrona anotada no caderno ou na planilha", "Mapa do ônibus atualizado na hora da venda"],
-    ["Comprovante de Pix perdido no WhatsApp", "Pagamento online com baixa automática"],
-    ["Cliente esperando resposta para reservar", "Link de reserva funcionando 24 horas"],
-    ["Lista impressa riscada no embarque", "Check-in por QR Code no celular"],
-    ["Sem saber quanto ainda falta receber", "Financeiro de cada pacote em tempo real"],
-  ];
+export function Problema({ locale = "pt" }: P) {
+  const t = dict[locale].problem;
+  const linhas = t.rows;
   return (
     <section className="bg-paper py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div>
-          <Eyebrow>Por que mudar</Eyebrow>
+          <Eyebrow>{t.eyebrow}</Eyebrow>
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
-            Excursão organizada no improviso custa venda.
+            {t.title}
           </h2>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-mute">
-            Cada mensagem sem resposta é um cliente que esfria. Cada poltrona controlada à mão é um risco de vender duas vezes.
+            {t.text}
           </p>
         </div>
         <div className="overflow-hidden rounded-3xl border border-line bg-white">
           <div className="grid grid-cols-2 border-b border-line text-xs font-semibold uppercase tracking-[0.16em]">
-            <p className="px-5 py-4 text-mute sm:px-7">Hoje</p>
-            <p className="bg-petrol px-5 py-4 text-white sm:px-7">Com UPTUR</p>
+            <p className="px-5 py-4 text-mute sm:px-7">{t.today}</p>
+            <p className="bg-petrol px-5 py-4 text-white sm:px-7">{t.withUs}</p>
           </div>
           {linhas.map(([antes, depois]) => (
             <div key={antes} className="grid grid-cols-2 border-b border-line text-sm last:border-b-0">
@@ -73,19 +75,16 @@ export function Problema() {
   );
 }
 
-export function ComoFunciona() {
-  const passos = [
-    ["Cadastre o pacote", "Destino, datas, preço, fotos, cidades de embarque e o ônibus. Do celular ou do computador, em minutos."],
-    ["Divulgue o link", "O pacote entra no site da sua agência. Mande o link nos grupos, no status e no Instagram."],
-    ["Receba e embarque", "O cliente escolhe a poltrona e paga sozinho. No dia, você confere todo mundo pelo QR Code."],
-  ];
+export function ComoFunciona({ locale = "pt" }: P) {
+  const t = dict[locale].how;
+  const passos = t.steps;
   return (
     <section id="como-funciona" className="scroll-mt-16 bg-paper py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <Eyebrow>Como funciona</Eyebrow>
+          <Eyebrow>{t.eyebrow}</Eyebrow>
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
-            Do cadastro ao embarque em três passos.
+            {t.title}
           </h2>
         </div>
         <ol className="mt-16 grid gap-px overflow-hidden rounded-3xl border border-line bg-line md:grid-cols-3">
@@ -102,20 +101,16 @@ export function ComoFunciona() {
   );
 }
 
-export function ParaQuem() {
-  const perfis = [
-    ["Excursionistas", "Bate-volta, praia, romaria, show, compras e parques."],
-    ["Agências de turismo rodoviário", "Viagens em grupo com vários ônibus e cidades de embarque."],
-    ["Pacotes de hospedagem", "Venda só a hospedagem, sem transporte incluído."],
-    ["Quem está começando", "Comece com CPF e organize tudo desde a primeira viagem."],
-  ];
+export function ParaQuem({ locale = "pt" }: P) {
+  const t = dict[locale].forWho;
+  const perfis = t.profiles;
   return (
     <section className="bg-white py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
-          <Eyebrow>Para quem é</Eyebrow>
+          <Eyebrow>{t.eyebrow}</Eyebrow>
           <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">
-            Feito para quem vende experiência, não para quem gosta de planilha.
+            {t.title}
           </h2>
         </div>
         <ul className="divide-y divide-line border-y border-line">
@@ -131,18 +126,19 @@ export function ParaQuem() {
   );
 }
 
-export function Planos() {
+export function Planos({ locale = "pt" }: P) {
+  const t = dict[locale].plans;
   return (
     <section id="planos" className="scroll-mt-16 bg-paper py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow>Planos</Eyebrow>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">Preço simples. Sem fidelidade.</h2>
-          <p className="mt-5 text-lg text-mute">Comece com 1 mês grátis e escolha o plano quando estiver pronto.</p>
+          <Eyebrow>{t.eyebrow}</Eyebrow>
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">{t.title}</h2>
+          <p className="mt-5 text-lg text-mute">{t.subtitle}</p>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-6xl gap-5 lg:grid-cols-3">
-          {planos.map((p) => (
+          {t.items.map((p) => (
             <div
               key={p.nome}
               className={`relative flex flex-col rounded-3xl p-8 ${
@@ -151,7 +147,7 @@ export function Planos() {
             >
               {p.destaque && (
                 <span className="absolute right-8 top-8 rounded-full bg-white px-3 py-1 text-[11px] font-semibold text-ink">
-                  Mais escolhido
+                  {t.popular}
                 </span>
               )}
               <h3 className="text-lg font-semibold">{p.nome}</h3>
@@ -169,7 +165,7 @@ export function Planos() {
                 ))}
               </ul>
               <a
-                href={REGISTER_URL}
+                href={registerUrl[locale]}
                 className={`mt-10 rounded-full py-3.5 text-center text-sm font-semibold transition-colors ${
                   p.destaque ? "bg-white text-ink hover:bg-line" : "bg-ink text-white hover:bg-graphite"
                 }`}
@@ -184,17 +180,20 @@ export function Planos() {
   );
 }
 
-export function Guias() {
+export function Guias({ locale = "pt" }: P) {
+  const t = dict[locale].guides;
+  // Guias de conteúdo só existem em português (SEO no Brasil)
+  if (!t.show) return null;
   return (
     <section className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
-            <Eyebrow>Conteúdo gratuito</Eyebrow>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">Guias para excursionistas.</h2>
+            <Eyebrow>{t.eyebrow}</Eyebrow>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">{t.title}</h2>
           </div>
           <Link href="/planilha-de-excursao-gratis" className="text-sm font-semibold underline decoration-line underline-offset-4 hover:decoration-ink">
-            Baixar a planilha de excursão grátis →
+            {t.download}
           </Link>
         </div>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -206,7 +205,7 @@ export function Guias() {
             >
               <span className="text-xs tabular-nums text-mute">0{i + 1}</span>
               <span className="mt-10 font-semibold leading-snug tracking-tight">{p.menu}</span>
-              <span className="mt-4 text-sm text-mute transition-colors group-hover:text-ink">Ler guia →</span>
+              <span className="mt-4 text-sm text-mute transition-colors group-hover:text-ink">{t.read}</span>
             </Link>
           ))}
         </div>
@@ -215,25 +214,26 @@ export function Guias() {
   );
 }
 
-export function Duvidas() {
+export function Duvidas({ locale = "pt" }: P) {
+  const t = dict[locale].faq;
   return (
     <section id="duvidas" className="scroll-mt-16 bg-paper py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
         <div>
-          <Eyebrow>Dúvidas</Eyebrow>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">Perguntas frequentes.</h2>
-          <p className="mt-5 text-lg text-mute">Não achou sua resposta? Fale com a gente no WhatsApp.</p>
+          <Eyebrow>{t.eyebrow}</Eyebrow>
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">{t.title}</h2>
+          <p className="mt-5 text-lg text-mute">{t.subtitle}</p>
           <a
-            href={WHATSAPP_URL}
+            href={whatsappUrl[locale]}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex rounded-full border border-ink px-6 py-3 text-sm font-semibold transition-colors hover:bg-ink hover:text-white"
           >
-            Chamar no WhatsApp
+            {t.button}
           </a>
         </div>
         <div className="divide-y divide-line border-y border-line">
-          {faq.map((f) => (
+          {t.items.map((f) => (
             <details key={f.pergunta} className="group py-6">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-medium tracking-tight">
                 {f.pergunta}
@@ -250,42 +250,43 @@ export function Duvidas() {
   );
 }
 
-export function CtaFinal() {
+export function CtaFinal({ locale = "pt" }: P) {
+  const t = dict[locale].cta;
   return (
     <section className="relative isolate overflow-hidden bg-ink text-white">
       <div className="bg-grid-dark absolute inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_70%)]" />
       <div className="mx-auto max-w-4xl px-4 py-28 text-center sm:px-6 lg:py-36">
         <Monograma tone="light" className="mx-auto h-auto w-24" />
-        <h2 className="mt-10 text-4xl font-semibold tracking-[-0.035em] sm:text-6xl">Mais destinos para o seu negócio.</h2>
+        <h2 className="mt-10 text-4xl font-semibold tracking-[-0.035em] sm:text-6xl">{t.title}</h2>
         <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/55">
-          Cadastre sua próxima excursão hoje e mande o link de reserva para seus clientes ainda esta semana.
+          {t.text}
         </p>
         <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-          <a href={REGISTER_URL} className="rounded-full bg-white px-8 py-4 text-sm font-semibold text-ink transition-colors hover:bg-line">
-            Criar conta grátis
+          <a href={registerUrl[locale]} className="rounded-full bg-white px-8 py-4 text-sm font-semibold text-ink transition-colors hover:bg-line">
+            {t.create}
           </a>
           <a
-            href={WHATSAPP_URL}
+            href={whatsappUrl[locale]}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-white/20 px-8 py-4 text-sm font-semibold transition-colors hover:border-white/50 hover:bg-white/5"
           >
-            Falar no WhatsApp
+            {t.talk}
           </a>
         </div>
-        <p className="mt-6 text-sm text-white/40">1 mês grátis · sem cartão de crédito · sem fidelidade</p>
+        <p className="mt-6 text-sm text-white/40">{t.note}</p>
       </div>
     </section>
   );
 }
 
-export function WhatsAppFlutuante() {
+export function WhatsAppFlutuante({ locale = "pt" }: P) {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={whatsappUrl[locale]}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Falar no WhatsApp"
+      aria-label={dict[locale].footer.whatsappAria}
       className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-ink text-white shadow-[0_10px_30px_-5px_rgb(0_0_0/0.5)] ring-1 ring-white/15 transition-transform hover:scale-105"
     >
       <svg viewBox="0 0 16 16" className="h-6 w-6" fill="currentColor" aria-hidden="true">

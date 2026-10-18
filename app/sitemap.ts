@@ -11,6 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    // Landing em espanhol e inglês (agências de fora do Brasil)
+    ...["es", "en"].map((l) => ({
+      url: `${siteUrl}/${l}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    })),
     ...paginas.map((p) => ({
       url: `${siteUrl}/${p.slug}`,
       lastModified: new Date(),
