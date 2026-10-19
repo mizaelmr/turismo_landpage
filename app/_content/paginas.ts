@@ -28,7 +28,7 @@ export const paginas: PaginaConteudo[] = [
     slug: "sistema-para-excursao",
     titleTag: "Sistema para Excursão: reservas, poltronas e embarque",
     metaDescription:
-      "Sistema para excursão com site de vendas, mapa de poltronas, pagamento por Pix e cartão e embarque por QR Code. Feito para excursionistas. Teste grátis por 1 mês.",
+      "Sistema para excursão com site de vendas, mapa de poltronas, pagamento por Pix e cartão e embarque por QR Code. Feito para excursionistas. Teste grátis por 15 dias.",
     menu: "Sistema para excursão",
     chamada: "Para excursionistas e agências de turismo rodoviário",
     h1: "Sistema para excursão: organize reservas, poltronas e embarque num lugar só",
@@ -104,12 +104,12 @@ export const paginas: PaginaConteudo[] = [
       {
         pergunta: "Preciso ter CNPJ para usar um sistema para excursão?",
         resposta:
-          "Não. No UPTUR você pode começar com CPF. Muitos excursionistas começam assim e formalizam a empresa depois.",
+          "Sim. O cadastro da agência no UPTUR é feito com o CNPJ da empresa, e o CNPJ de MEI também serve. Se você ainda trabalha como pessoa física, abrir um MEI é rápido e já resolve.",
       },
       {
         pergunta: "Quanto custa o sistema?",
         resposta:
-          "O primeiro mês é grátis e sem cartão de crédito. Depois, o plano Profissional custa R$ 197 por mês e o Pro+, com o WhatsApp da própria agência, custa R$ 247 por mês. Não há fidelidade.",
+          "Os primeiros 15 dias são grátis: você cadastra o cartão ao criar a conta e a primeira cobrança só acontece no fim do teste. Depois, o plano Profissional custa R$ 197 por mês e o Pro+, com o WhatsApp da própria agência, custa R$ 247 por mês. Não há fidelidade.",
       },
       {
         pergunta: "Funciona no celular?",
@@ -124,7 +124,7 @@ export const paginas: PaginaConteudo[] = [
     ],
     cta: {
       titulo: "Organize sua próxima excursão no UPTUR",
-      texto: "Cadastre o pacote hoje e mande o link de vendas para os seus clientes ainda esta semana. 1 mês grátis, sem cartão.",
+      texto: "Cadastre o pacote hoje e mande o link de vendas para os seus clientes ainda esta semana. 15 dias grátis.",
     },
     relacionadas: ["mapa-de-poltronas-onibus", "embarque-qr-code-excursao", "como-vender-excursao-online"],
   },
@@ -199,7 +199,7 @@ export const paginas: PaginaConteudo[] = [
     ],
     cta: {
       titulo: "Monte o mapa do seu ônibus em minutos",
-      texto: "Crie sua conta, desenhe o veículo e publique a primeira excursão com escolha de poltrona. 1 mês grátis.",
+      texto: "Crie sua conta, desenhe o veículo e publique a primeira excursão com escolha de poltrona. 15 dias grátis.",
     },
     relacionadas: ["sistema-para-excursao", "planilha-de-excursao-gratis", "embarque-qr-code-excursao"],
   },
@@ -279,7 +279,7 @@ export const paginas: PaginaConteudo[] = [
     ],
     cta: {
       titulo: "Tenha seu link de vendas de excursão hoje",
-      texto: "Publique o pacote, divulgue o link e receba reservas pagas até de madrugada. Teste grátis por 1 mês.",
+      texto: "Publique o pacote, divulgue o link e receba reservas pagas até de madrugada. Teste grátis por 15 dias.",
     },
     relacionadas: ["sistema-para-excursao", "planilha-de-excursao-gratis", "mapa-de-poltronas-onibus"],
   },
@@ -349,7 +349,7 @@ export const paginas: PaginaConteudo[] = [
     ],
     cta: {
       titulo: "Seu próximo embarque sem lista de papel",
-      texto: "Cadastre a excursão no UPTUR e use o check-in por QR Code já na próxima viagem. 1 mês grátis.",
+      texto: "Cadastre a excursão no UPTUR e use o check-in por QR Code já na próxima viagem. 15 dias grátis.",
     },
     relacionadas: ["sistema-para-excursao", "mapa-de-poltronas-onibus", "como-vender-excursao-online"],
   },
@@ -426,7 +426,7 @@ export const paginas: PaginaConteudo[] = [
     ],
     cta: {
       titulo: "Cansou da planilha?",
-      texto: "No UPTUR a lista de passageiros, as poltronas e os pagamentos se atualizam sozinhos. Teste grátis por 1 mês.",
+      texto: "No UPTUR a lista de passageiros, as poltronas e os pagamentos se atualizam sozinhos. Teste grátis por 15 dias.",
     },
     relacionadas: ["sistema-para-excursao", "mapa-de-poltronas-onibus", "como-vender-excursao-online"],
   },

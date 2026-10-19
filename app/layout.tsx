@@ -13,7 +13,7 @@ const siteUrl = "https://www.up.tur.br";
 
 const title = "Sistema para Excursões e Agências de Turismo | UPTUR";
 const description =
-  "Venda excursões online 24h com mapa de poltronas, pagamento por Pix e embarque por QR Code. Sistema para agências de turismo rodoviário. Teste grátis por 1 mês.";
+  "Venda excursões online 24h com mapa de poltronas, pagamento por Pix e embarque por QR Code. Sistema para agências de turismo rodoviário. Teste grátis por 15 dias.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -89,7 +89,7 @@ const schemaOrg = {
           name: "Teste grátis",
           price: "0",
           priceCurrency: "BRL",
-          description: "1 mês grátis, sem cartão de crédito",
+          description: "15 dias grátis; cartão cadastrado e cobrança só no fim do teste",
         },
         {
           "@type": "Offer",
