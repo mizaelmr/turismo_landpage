@@ -120,7 +120,7 @@ const pt: Dict = {
   meta: {
     title: "Sistema para Excursões e Agências de Turismo | UPTUR",
     description:
-      "Venda excursões online 24h com mapa de poltronas, pagamento por Pix e embarque por QR Code. Sistema para agências de turismo rodoviário. Teste grátis por 1 mês.",
+      "Venda excursões online 24h com mapa de poltronas, pagamento por Pix e embarque por QR Code. Sistema para agências de turismo rodoviário. Teste grátis por 15 dias.",
   },
   header: {
     links: [
@@ -139,9 +139,9 @@ const pt: Dict = {
     titleHighlight: "venda 24h com mapa de poltronas e embarque por QR Code",
     subtitle:
       "Seu destino, nosso comando. O cliente escolhe a poltrona, paga por Pix e recebe o cartão de embarque. Você acompanha tudo num painel só, sem planilha e sem caderno.",
-    cta: "Testar grátis por 1 mês",
+    cta: "Testar grátis por 15 dias",
     talk: "Falar com um especialista",
-    bullets: ["Sem cartão de crédito", "Sem fidelidade", "Começa com CPF"],
+    bullets: ["15 dias grátis", "Sem fidelidade", "Cancele quando quiser"],
     cardNewBooking: "Nova reserva",
     cardNow: "agora",
     cardApproved: "Pagamento aprovado via Pix",
@@ -260,21 +260,21 @@ const pt: Dict = {
       ["Excursionistas", "Bate-volta, praia, romaria, show, compras e parques."],
       ["Agências de turismo rodoviário", "Viagens em grupo com vários ônibus e cidades de embarque."],
       ["Pacotes de hospedagem", "Venda só a hospedagem, sem transporte incluído."],
-      ["Quem está começando", "Comece com CPF e organize tudo desde a primeira viagem."],
+      ["Quem está começando", "Organize tudo desde a primeira viagem, sem planilha e sem caderno."],
     ],
   },
   plans: {
     eyebrow: "Planos",
     title: "Preço simples. Sem fidelidade.",
-    subtitle: "Comece com 1 mês grátis e escolha o plano quando estiver pronto.",
+    subtitle: "Comece com 15 dias grátis. A primeira cobrança é automática no fim do teste, e você pode cancelar antes.",
     popular: "Mais escolhido",
     items: [
       {
         nome: "Teste grátis",
         preco: "R$ 0",
-        periodo: "por 1 mês",
-        descricao: "Para conhecer a plataforma, sem cartão de crédito.",
-        itens: ["Sem limite de reservas", "Controle de pacotes", "Suporte por e-mail"],
+        periodo: "por 15 dias",
+        descricao: "Conheça a plataforma completa. Você cadastra o cartão e só é cobrado no fim do teste.",
+        itens: ["Todos os recursos do plano escolhido", "Reservas ilimitadas", "Cancele antes e não paga nada"],
         cta: "Começar grátis",
         destaque: false,
       },
@@ -323,12 +323,12 @@ const pt: Dict = {
     subtitle: "Não achou sua resposta? Fale com a gente no WhatsApp.",
     button: "Chamar no WhatsApp",
     items: [
-      { pergunta: "Preciso ter CNPJ para usar?", resposta: "Não. Qualquer pessoa pode testar e usar o UPTUR, mesmo com CPF." },
+      { pergunta: "Preciso ter CNPJ para usar?", resposta: "Sim. O cadastro da agência é feito com o CNPJ da empresa. O CNPJ de MEI também serve." },
       { pergunta: "Posso cancelar quando quiser?", resposta: "Sim, não há fidelidade. Você pode cancelar ou trocar de plano a qualquer momento." },
       {
         pergunta: "Como funciona o período gratuito?",
         resposta:
-          "Você usa o sistema por 1 mês sem precisar de cartão de crédito. Depois, pode assinar o Profissional por R$ 197/mês ou o Pro+ (com o WhatsApp da própria agência) por R$ 247/mês.",
+          "Você usa o sistema completo por 15 dias. O cartão de crédito é cadastrado ao criar a conta e a primeira cobrança é automática no fim do teste: R$ 197/mês no Profissional ou R$ 247/mês no Pro+ (com o WhatsApp da própria agência). Se cancelar antes, não paga nada.",
       },
       {
         pergunta: "Preciso instalar algo?",
@@ -349,7 +349,7 @@ const pt: Dict = {
     text: "Cadastre sua próxima excursão hoje e mande o link de reserva para seus clientes ainda esta semana.",
     create: "Criar conta grátis",
     talk: "Falar no WhatsApp",
-    note: "1 mês grátis · sem cartão de crédito · sem fidelidade",
+    note: "15 dias grátis · sem fidelidade · cancele quando quiser",
   },
   footer: {
     tagline: "Tecnologia para agências de turismo que evoluem. Mais destinos para o seu negócio.",

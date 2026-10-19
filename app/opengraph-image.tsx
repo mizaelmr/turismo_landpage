@@ -30,7 +30,7 @@ export default async function OpengraphImage() {
             Venda 24h com mapa de poltronas e embarque por QR Code
           </div>
           <div style={{ fontSize: 28, marginTop: 36, color: "rgba(255,255,255,0.55)" }}>
-            Teste grátis por 1 mês · www.up.tur.br
+            Teste grátis por 15 dias · www.up.tur.br
           </div>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}

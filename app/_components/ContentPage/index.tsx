@@ -103,7 +103,7 @@ export function ContentPage({ slug }: { slug: string }) {
                   href={REGISTER_URL}
                   className="inline-flex items-center justify-center rounded-full bg-ink px-7 py-4 text-sm font-semibold text-white transition-colors hover:bg-graphite"
                 >
-                  Testar grátis por 1 mês →
+                  Testar grátis por 15 dias →
                 </a>
               )}
             </div>
